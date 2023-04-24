@@ -27,7 +27,7 @@ import {
     AuthError,
     CommonSilentFlowRequest,
     AccountInfo,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { BaseInteractionClient } from "./BaseInteractionClient";
 import { BrowserConfiguration } from "../config/Configuration";
 import { BrowserCacheManager } from "../cache/BrowserCacheManager";

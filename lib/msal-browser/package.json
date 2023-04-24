@@ -1,16 +1,21 @@
 {
-  "name": "@azure/msal-browser",
+  "name": "@bobleujr/msal-browser",
   "author": {
     "name": "Microsoft",
     "email": "nugetaad@microsoft.com",
     "url": "https://www.microsoft.com"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/AzureAD/microsoft-authentication-library-for-js.git"
   },
-  "version": "2.35.0",
+  "version": "2.35.2",
   "description": "Microsoft Authentication Library for js",
   "keywords": [
     "implicit",
@@ -56,7 +61,7 @@
     "build:modules": "rollup -c --strictDeprecations --bundleConfigAsCjs",
     "build:modules:watch": "rollup -cw --bundleConfigAsCjs",
     "build": "npm run clean && npm run build:modules",
-    "link:localDeps": "npx lerna bootstrap --scope @azure/msal-common --scope @azure/msal-browser",
+    "link:localDeps": "npx lerna bootstrap --scope @bobleujr/msal-common --scope @bobleujr/msal-browser",
     "prepack": "npm run build:all",
     "format:check": "npx prettier --ignore-path .gitignore --check src test",
     "format:fix": "npx prettier --ignore-path .gitignore --write src test"
@@ -91,6 +96,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@azure/msal-common": "^12.0.0"
+    "@bobleujr/msal-common": "^12.0.6"
   }
 }

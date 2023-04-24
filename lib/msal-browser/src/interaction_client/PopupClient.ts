@@ -20,7 +20,7 @@ import {
     IPerformanceClient,
     Logger,
     ICrypto,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { StandardInteractionClient } from "./StandardInteractionClient";
 import { EventType } from "../event/EventType";
 import {

@@ -30,7 +30,7 @@ import {
     ClientAuthError,
     TokenKeys,
     CredentialType,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { CacheOptions } from "../config/Configuration";
 import { BrowserAuthError } from "../error/BrowserAuthError";
 import {

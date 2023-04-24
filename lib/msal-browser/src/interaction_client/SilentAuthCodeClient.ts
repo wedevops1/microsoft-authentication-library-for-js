@@ -12,7 +12,7 @@ import {
     Constants,
     IPerformanceClient,
     PerformanceEvents,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { StandardInteractionClient } from "./StandardInteractionClient";
 import { AuthorizationUrlRequest } from "../request/AuthorizationUrlRequest";
 import { BrowserConfiguration } from "../config/Configuration";

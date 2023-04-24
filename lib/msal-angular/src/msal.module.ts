@@ -5,7 +5,7 @@
 
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IPublicClientApplication } from '@azure/msal-browser';
+import { IPublicClientApplication } from '@bobleujr/msal-browser';
 import { MsalBroadcastService } from './msal.broadcast.service';
 import { MsalGuard } from './msal.guard';
 import { MsalGuardConfiguration } from './msal.guard.config';

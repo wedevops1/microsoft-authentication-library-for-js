@@ -19,7 +19,7 @@ import {
   InteractionType,
   StringUtils,
   UrlString,
-} from '@azure/msal-browser';
+} from '@bobleujr/msal-browser';
 import { Observable, EMPTY, of } from 'rxjs';
 import { switchMap, catchError, take, filter } from 'rxjs/operators';
 import { MsalService } from './msal.service';

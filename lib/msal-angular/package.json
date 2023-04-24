@@ -1,10 +1,15 @@
 {
-  "name": "@azure/msal-angular",
+  "name": "@bobleujr/msal-angular",
   "version": "2.5.5",
   "author": {
     "name": "Microsoft",
     "email": "nugetaad@microsoft.com",
     "url": "https://www.microsoft.com"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "license": "MIT",
   "repository": {
@@ -27,7 +32,7 @@
     "lint:fix": "npm run lint -- -- --fix",
     "e2e": "ng e2e",
     "prepack": "npm run build:all",
-    "link:localDeps": "npx lerna bootstrap --scope @azure/msal-common --scope @azure/msal-browser --scope @azure/msal-angular",
+    "link:localDeps": "npx lerna bootstrap --scope @bobleujr/msal-common --scope @bobleujr/msal-browser --scope @bobleujr/msal-angular",
     "prepublishOnly": "echo Use npm run deploy && exit 1",
     "format:check": "npx prettier --ignore-path .gitignore --check src",
     "format:fix": "npx prettier --ignore-path .gitignore --write src"
@@ -49,7 +54,7 @@
     "@angular/platform-browser": "^15.1.4",
     "@angular/platform-browser-dynamic": "^15.1.4",
     "@angular/router": "^15.1.4",
-    "@azure/msal-browser": "^2.32.2",
+    "@bobleujr/msal-browser": "^2.35.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -69,7 +74,7 @@
     "zone.js": "~0.11.8"
   },
   "peerDependencies": {
-    "@azure/msal-browser": "^2.35.0",
+    "@bobleujr/msal-browser": "^2.35.2",
     "rxjs": "^7.0.0"
   }
 }

@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Constants, IGuidGenerator } from "@azure/msal-common";
+import { Constants, IGuidGenerator } from "@bobleujr/msal-common";
 import { MathUtils } from "../utils/MathUtils";
 import { BrowserCrypto } from "./BrowserCrypto";
 export class GuidGenerator implements IGuidGenerator {

@@ -19,7 +19,7 @@ import {
     CacheRecord,
     AuthenticationResult,
     Constants,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { BrowserConfiguration } from "../config/Configuration";
 import { SilentRequest } from "../request/SilentRequest";
 import { BrowserCacheManager } from "./BrowserCacheManager";

@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Constants, INetworkModule, UrlString } from "@azure/msal-common";
+import { Constants, INetworkModule, UrlString } from "@bobleujr/msal-common";
 import { FetchClient } from "../network/FetchClient";
 import { XhrClient } from "../network/XhrClient";
 import { BrowserAuthError } from "../error/BrowserAuthError";

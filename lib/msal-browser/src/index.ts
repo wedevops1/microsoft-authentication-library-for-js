@@ -129,6 +129,6 @@ export {
     PerformanceCallbackFunction,
     PerformanceEvent,
     PerformanceEvents,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 
 export { version } from "./packageMetadata";

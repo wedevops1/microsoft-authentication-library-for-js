@@ -6,7 +6,7 @@
 import {
     ExternalTokenResponse,
     AuthenticationResult,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { SilentRequest } from "../request/SilentRequest";
 import { LoadTokenOptions } from "./TokenCache";
 

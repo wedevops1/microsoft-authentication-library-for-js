@@ -6,7 +6,7 @@
 import {
     AuthorizationCodeClient,
     ClientConfiguration,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 
 export class HybridSpaAuthorizationCodeClient extends AuthorizationCodeClient {
     constructor(config: ClientConfiguration) {

@@ -11,7 +11,7 @@ import {
     IPerformanceClient,
     ICrypto,
     CommonSilentFlowRequest,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { RedirectRequest } from "../request/RedirectRequest";
 import { PopupRequest } from "../request/PopupRequest";
 import { SilentRequest } from "../request/SilentRequest";

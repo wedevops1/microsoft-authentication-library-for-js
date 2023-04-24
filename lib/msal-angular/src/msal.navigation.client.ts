@@ -10,7 +10,7 @@ import {
   NavigationClient,
   NavigationOptions,
   UrlString,
-} from '@azure/msal-browser';
+} from '@bobleujr/msal-browser';
 import { MsalService } from './msal.service';
 
 /**

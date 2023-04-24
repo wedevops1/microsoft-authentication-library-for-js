@@ -15,7 +15,7 @@ import {
     Logger,
     ServerError,
     IPerformanceClient,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import {
     BrowserAuthError,
     BrowserAuthErrorMessage,

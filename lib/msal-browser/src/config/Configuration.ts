@@ -15,7 +15,7 @@ import {
     AzureCloudInstance,
     AzureCloudOptions,
     ApplicationTelemetry,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { BrowserUtils } from "../utils/BrowserUtils";
 import {
     BrowserCacheLocation,

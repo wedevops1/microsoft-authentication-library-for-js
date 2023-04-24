@@ -9,7 +9,7 @@ import {
     LoggerOptions,
     PopTokenGenerator,
     SignedHttpRequestParameters,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { version, name } from "../packageMetadata";
 
 export type SignedHttpRequestOptions = {

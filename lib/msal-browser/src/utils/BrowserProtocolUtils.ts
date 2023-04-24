@@ -12,7 +12,7 @@ import {
     ProtocolUtils,
     ServerAuthorizationCodeResponse,
     UrlString,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 
 export type BrowserStateObject = {
     interactionType: InteractionType;

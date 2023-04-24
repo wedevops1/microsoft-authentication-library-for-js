@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Constants } from "@azure/msal-common";
+import { Constants } from "@bobleujr/msal-common";
 import { KEY_FORMAT_JWK } from "../utils/BrowserConstants";
 import { BrowserStringUtils } from "../utils/BrowserStringUtils";
 import { ISubtleCrypto } from "./ISubtleCrypto";

@@ -23,7 +23,7 @@ import {
     AzureCloudOptions,
     PerformanceEvents,
     AuthError,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { BaseInteractionClient } from "./BaseInteractionClient";
 import { AuthorizationUrlRequest } from "../request/AuthorizationUrlRequest";
 import { BrowserConstants, InteractionType } from "../utils/BrowserConstants";

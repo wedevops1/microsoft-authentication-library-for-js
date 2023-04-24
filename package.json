@@ -1,6 +1,10 @@
 {
   "name": "microsoft-authentication-libraries-for-js",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@angular-eslint/eslint-plugin": "^15.2.1",
     "@angular/compiler": "^15.2.4",

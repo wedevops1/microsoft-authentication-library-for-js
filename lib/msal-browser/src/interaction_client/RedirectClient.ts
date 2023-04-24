@@ -18,7 +18,7 @@ import {
     Logger,
     IPerformanceClient,
     PerformanceEvents,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { StandardInteractionClient } from "./StandardInteractionClient";
 import {
     ApiId,

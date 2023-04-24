@@ -15,7 +15,7 @@ import {
     PerformanceEvents,
     IPerformanceClient,
     ICrypto
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import {
     NativeExtensionRequest,
     NativeExtensionRequestBody,

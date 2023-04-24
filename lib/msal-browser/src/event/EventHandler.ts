@@ -8,7 +8,7 @@ import {
     Logger,
     AccountEntity,
     CacheManager,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { InteractionType } from "../utils/BrowserConstants";
 import {
     EventCallbackFunction,

@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { CommonAuthorizationUrlRequest } from "@azure/msal-common";
+import { CommonAuthorizationUrlRequest } from "@bobleujr/msal-common";
 import { PopupWindowAttributes } from "./PopupWindowAttributes";
 
 /**

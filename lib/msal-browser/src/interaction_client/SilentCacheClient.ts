@@ -13,7 +13,7 @@ import {
     AzureCloudOptions,
     PerformanceEvents,
     AuthError,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { SilentRequest } from "../request/SilentRequest";
 import { ApiId } from "../utils/BrowserConstants";
 import {

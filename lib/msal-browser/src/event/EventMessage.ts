@@ -7,7 +7,7 @@ import {
     AuthenticationResult,
     AuthError,
     AccountInfo,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { EventType } from "./EventType";
 import { InteractionStatus, InteractionType } from "../utils/BrowserConstants";
 import {

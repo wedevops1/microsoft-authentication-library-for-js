@@ -18,7 +18,7 @@ import {
     ServerError,
     IPerformanceClient,
     PerformanceEvents,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 
 import { BrowserCacheManager } from "../cache/BrowserCacheManager";
 import {

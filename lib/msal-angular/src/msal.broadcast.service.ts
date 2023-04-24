@@ -9,7 +9,7 @@ import {
   EventMessageUtils,
   IPublicClientApplication,
   InteractionStatus,
-} from '@azure/msal-browser';
+} from '@bobleujr/msal-browser';
 import { BehaviorSubject, Observable, ReplaySubject, Subject } from 'rxjs';
 import { MsalService } from './msal.service';
 import { MsalBroadcastConfiguration } from './msal.broadcast.config';

@@ -12,7 +12,7 @@ import {
     AuthError,
     AzureCloudOptions,
     PerformanceEvents,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { ApiId } from "../utils/BrowserConstants";
 import { BrowserAuthError } from "../error/BrowserAuthError";
 

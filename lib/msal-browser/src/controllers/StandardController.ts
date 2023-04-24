@@ -25,7 +25,7 @@ import {
     InProgressPerformanceEvent,
     RequestThumbprint,
     ServerError,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import {
     BrowserCacheManager,
     DEFAULT_BROWSER_CACHE_MANAGER,

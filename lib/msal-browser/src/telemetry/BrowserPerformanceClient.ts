@@ -14,7 +14,7 @@ import {
     ApplicationTelemetry,
     SubMeasurement,
     PreQueueEvent,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { CryptoOptions } from "../config/Configuration";
 import { BrowserCrypto } from "../crypto/BrowserCrypto";
 import { GuidGenerator } from "../crypto/GuidGenerator";

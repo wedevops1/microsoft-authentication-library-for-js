@@ -18,7 +18,10 @@
     "debug": false,
     "skipTemplateCodegen": true,
     "skipMetadataEmit": false,
-    "strictMetadataEmit": true
+    "strictMetadataEmit": true,
+    "fullTemplateTypeCheck": true,
+    "enableIvy": true,
+    "compilationMode": "partial"
   },
   "exclude": [
     "src/test.ts",

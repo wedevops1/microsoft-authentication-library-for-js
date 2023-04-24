@@ -3,7 +3,7 @@
     "run": {
       "scope": [
         "msal",
-        "@azure/msal-common",
+        "@bobleujr/msal-common",
         "@azure/msal-browser",
         "@azure/msal-react",
         "@azure/msal-angular",
@@ -12,25 +12,25 @@
       "stream": true
     },
     "exec": {
-        "scope": [
-            "msal",
-            "@azure/msal-browser",
-            "@azure/msal-common",
-            "@azure/msal-node",
-            "@azure/msal-react",
-            "@azure/msal-angular"
-        ],
-        "stream": true
+      "scope": [
+        "msal",
+        "@azure/msal-browser",
+        "@bobleujr/msal-common",
+        "@azure/msal-node",
+        "@azure/msal-react",
+        "@azure/msal-angular"
+      ],
+      "stream": true
     },
     "bootstrap": {
-        "scope": [
-            "msal",
-            "@azure/msal-browser",
-            "@azure/msal-common",
-            "@azure/msal-node",
-            "@azure/msal-react",
-            "@azure/msal-angular",
-            "@azure/msal-node-extensions"
+      "scope": [
+        "msal",
+        "@azure/msal-browser",
+        "@bobleujr/msal-common",
+        "@azure/msal-node",
+        "@azure/msal-react",
+        "@azure/msal-angular",
+        "@azure/msal-node-extensions"
       ],
       "stream": true
     }

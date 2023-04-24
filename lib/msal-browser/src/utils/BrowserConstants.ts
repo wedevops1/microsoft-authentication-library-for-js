@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { OIDC_DEFAULT_SCOPES } from "@azure/msal-common";
+import { OIDC_DEFAULT_SCOPES } from "@bobleujr/msal-common";
 import { PopupRequest } from "../request/PopupRequest";
 import { RedirectRequest } from "../request/RedirectRequest";
 

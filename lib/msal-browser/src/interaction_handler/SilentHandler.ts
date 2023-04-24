@@ -12,7 +12,7 @@ import {
     Logger,
     IPerformanceClient,
     PerformanceEvents,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { InteractionHandler } from "./InteractionHandler";
 import { BrowserAuthError } from "../error/BrowserAuthError";
 import { BrowserCacheManager } from "../cache/BrowserCacheManager";

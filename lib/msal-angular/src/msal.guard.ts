@@ -19,7 +19,7 @@ import {
   PopupRequest,
   RedirectRequest,
   AuthenticationResult,
-} from '@azure/msal-browser';
+} from '@bobleujr/msal-browser';
 import { Observable, of } from 'rxjs';
 import { concatMap, catchError, map } from 'rxjs/operators';
 import { MsalService } from './msal.service';

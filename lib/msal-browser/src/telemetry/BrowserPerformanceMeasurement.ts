@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { IPerformanceMeasurement, SubMeasurement } from "@azure/msal-common";
+import { IPerformanceMeasurement, SubMeasurement } from "@bobleujr/msal-common";
 
 export class BrowserPerformanceMeasurement implements IPerformanceMeasurement {
     private readonly measureName: string;
