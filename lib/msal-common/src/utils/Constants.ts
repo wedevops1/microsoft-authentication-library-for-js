@@ -55,8 +55,7 @@ export const Constants = {
 
 export const OIDC_DEFAULT_SCOPES = [
     Constants.OPENID_SCOPE,
-    Constants.PROFILE_SCOPE,
-    Constants.OFFLINE_ACCESS_SCOPE
+    Constants.PROFILE_SCOPE
 ];
 
 export const OIDC_SCOPES = [
