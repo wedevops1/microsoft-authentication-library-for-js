@@ -4,7 +4,7 @@
  */
 
 import { NativeConstants, NativeExtensionMethod } from "../../utils/BrowserConstants";
-import { Logger, AuthError, AuthenticationScheme } from "@azure/msal-common";
+import { Logger, AuthError, AuthenticationScheme } from "@bobleujr/msal-common";
 import { NativeExtensionRequest, NativeExtensionRequestBody } from "./NativeRequest";
 import { NativeAuthError } from "../../error/NativeAuthError";
 import { BrowserAuthError } from "../../error/BrowserAuthError";

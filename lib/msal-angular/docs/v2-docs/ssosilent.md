@@ -49,8 +49,8 @@ If ssoSilent() fails, we recommend handling this error by logging in interactive
 
 ```js
 import { Component, OnInit } from '@angular/core';
-import { MsalService } from '@azure/msal-angular';
-import { SilentRequest, SsoSilentRequest } from '@azure/msal-browser';
+import { MsalService } from '@bobleujr/msal-angular';
+import { SilentRequest, SsoSilentRequest } from '@bobleujr/msal-browser';
 
 @Component({
   selector: 'app-root',

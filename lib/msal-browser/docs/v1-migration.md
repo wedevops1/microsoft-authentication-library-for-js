@@ -25,7 +25,7 @@ const msalInstance = new msal.UserAgentApplication(config);
 In MSAL 2.x, you can update this to use the new `PublicClientApplication` object.
 
 ```javascript
-import * as msal from "@azure/msal-browser";
+import * as msal from "@bobleujr/msal-browser";
 
 const msalInstance = new msal.PublicClientApplication(config);
 ```

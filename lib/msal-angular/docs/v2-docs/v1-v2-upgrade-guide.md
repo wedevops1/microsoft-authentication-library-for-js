@@ -2,26 +2,26 @@
 
 MSAL Angular v2 brings our Angular wrapper up-to-date with the latest version of MSAL common, and with out-of-the-box support for modern versions of Angular (9 - 12) and rxjs (6).
 
-This guide will demonstrate changes needed to migrate an existing application from `@azure/msal-angular` v1 to v2.
+This guide will demonstrate changes needed to migrate an existing application from `@bobleujr/msal-angular` v1 to v2.
 
 ## Installation
 
-The first fundamental change to MSAL Angular v2 is that is no longer uses the core `msal` package, but wraps the `@azure/msal-browser` package as a [peer dependency](https://nodejs.org/en/blog/npm/peer-dependencies/). 
+The first fundamental change to MSAL Angular v2 is that is no longer uses the core `msal` package, but wraps the `@bobleujr/msal-browser` package as a [peer dependency](https://nodejs.org/en/blog/npm/peer-dependencies/). 
 
 First, uninstall any previous versions of MSAL currently being used.
 
-To install `@azure/msal-browser` and `@azure/msal-angular`:
+To install `@bobleujr/msal-browser` and `@bobleujr/msal-angular`:
 ```
-npm install @azure/msal-browser @azure/msal-angular@latest
+npm install @bobleujr/msal-browser @bobleujr/msal-angular@latest
 ```
 
-## Breaking changes in `@azure/msal-browser@2`
+## Breaking changes in `@bobleujr/msal-browser@2`
 
-`@azure/msal-browser@2` includes a number of breaking changes from `msal@1.x`. Many of these should be abstracted away from your application, but there are a few which will require code changes.
+`@bobleujr/msal-browser@2` includes a number of breaking changes from `msal@1.x`. Many of these should be abstracted away from your application, but there are a few which will require code changes.
 
 ### MsalModule.forRoot now takes three arguments
 
-Previously, `@azure/msal-angular` accepted two configuration objects via `MsalModule.forRoot()`, one for the core library, and one for `@azure/msal-angular`. This has been changed to take in an instance of MSAL, as well as two Angular-specific configuration objects.
+Previously, `@bobleujr/msal-angular` accepted two configuration objects via `MsalModule.forRoot()`, one for the core library, and one for `@bobleujr/msal-angular`. This has been changed to take in an instance of MSAL, as well as two Angular-specific configuration objects.
 
 1. The first argument is the MSAL instance. This can be provided as a factory which instantiates MSAL, or by passing the instance of MSAL in with configurations. 
 2. The second argument is a [`MsalGuardConfiguration`](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/src/msal.guard.config.ts) object, which specifies the `interactionType` as well as an optional `authRequest` and an optional `loginFailedRoute`. 
@@ -50,7 +50,7 @@ See our [configuration doc](https://github.com/AzureAD/microsoft-authentication-
 
 * We recommend subscribing to the `inProgress$` observable and filtering for `InteractionStatus.None` before retrieving account information. This ensures that all interactions have completed before getting account information. See [our sample](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/samples/msal-angular-v2-samples/angular10-sample-app/src/app/app.component.ts#L27) for an example of this use.
 * When getting accounts, we recommend using `getAccountByHomeId()` and `getAccountByLocalId()`, available on the MSAL instance. `getAccount()` is now `getAccountByUsername()`, but should be a secondary choice, as it may be less reliable and is for convenience only.
-* `getAllAccounts()` is also available on the MSAL instance. Please see [docs](https://azuread.github.io/microsoft-authentication-library-for-js/ref/classes/_azure_msal_browser.publicclientapplication.html) for `@azure/msal-browser` for more details on account methods.
+* `getAllAccounts()` is also available on the MSAL instance. Please see [docs](https://azuread.github.io/microsoft-authentication-library-for-js/ref/classes/_azure_msal_browser.publicclientapplication.html) for `@bobleujr/msal-browser` for more details on account methods.
 * Additionally, you can now get and set active acccounts using `getActiveAccount()` and `setActiveAccount()`. See our [FAQ](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/FAQ.md#how-do-i-get-and-set-active-accounts) for more information.
 
 ## Angular 9+ and rxjs@6

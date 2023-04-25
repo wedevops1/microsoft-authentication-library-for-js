@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { ValidCredentialType } from "@azure/msal-common";
+import { ValidCredentialType } from "@bobleujr/msal-common";
 import {
     CacheManager,
     AccountEntity,
@@ -16,7 +16,7 @@ import {
     CredentialEntity,
     CredentialType,
     AuthorityMetadataEntity
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 
 export class TestStorageManager extends CacheManager {
     store = {};

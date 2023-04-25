@@ -2,7 +2,7 @@
 
 MSAL Angular v1 brings our Angular wrapper up-to-date with the latest version of MSAL core, and with out-of-the-box support for modern versions of Angular (6+) and rxjs (6).
 
-This guide will demonstrate changes needed to migrate an existing application from `@azure/msal-angular@0.x` to `@azure/msal-angular@1.0.0`.
+This guide will demonstrate changes needed to migrate an existing application from `@bobleujr/msal-angular@0.x` to `@bobleujr/msal-angular@1.0.0`.
 
 A detailed list of changes can be found in the [CHANGELOG](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/CHANGELOG.md).
 
@@ -11,7 +11,7 @@ A detailed list of changes can be found in the [CHANGELOG](https://github.com/Az
 The first fundamental change to MSAL Angular is that the core `msal` package is no longer a regular dependency, and instead a [peer dependency](https://nodejs.org/en/blog/npm/peer-dependencies/). This means your application must also include `msal` as a normal dependency, instead of relying on MSAL Angular to include it. This allows for your application to either use the latest version of `msal` (recommended), or you can pick a custom version/range, while still using the latest version of MSAL Angular itself. Note, you should still provide a version that satisfies the semver range provided for the peer dependency, or else MSAL Angular may not function as intended.
 
 Steps:
-1. Install `msal` and `@azure/msal-angular`: `npm install msal@beta @azure/msal-angular@beta`.
+1. Install `msal` and `@bobleujr/msal-angular`: `npm install msal@beta @bobleujr/msal-angular@beta`.
 
 ## Breaking changes in MSAL.js v1
 

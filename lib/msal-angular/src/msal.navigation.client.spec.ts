@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { EventType, InteractionStatus, InteractionType, NavigationClient, NavigationOptions, PublicClientApplication } from '@azure/msal-browser';
+import { EventType, InteractionStatus, InteractionType, NavigationClient, NavigationOptions, PublicClientApplication } from '@bobleujr/msal-browser';
 import { MsalBroadcastService } from './msal.broadcast.service';
 import { MsalModule, MsalService } from './public-api';
 import { MsalCustomNavigationClient } from './msal.navigation.client';

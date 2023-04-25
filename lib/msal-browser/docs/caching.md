@@ -7,7 +7,7 @@ When MSAL acquires a token, it caches it for future usage. MSAL manages token li
 You can configure the cache storage location via the configuration object that is used to instantiate MSAL:
 
 ```typescript
-import { PublicClientApplication, BrowserCacheLocation } from "@azure/msal-browser";
+import { PublicClientApplication, BrowserCacheLocation } from "@bobleujr/msal-browser";
 
 const pca = new PublicClientApplication({
     auth: {

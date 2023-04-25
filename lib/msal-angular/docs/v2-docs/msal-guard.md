@@ -20,8 +20,8 @@ Your configuration may look like the below. See our [configuration doc](https://
 // app.module.ts
 import { NgModule } from '@angular/core';
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
-import { MsalModule, MsalRedirectComponent, MsalGuard } from '@azure/msal-angular'; // Import MsalInterceptor
-import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
+import { MsalModule, MsalRedirectComponent, MsalGuard } from '@bobleujr/msal-angular'; // Import MsalInterceptor
+import { InteractionType, PublicClientApplication } from '@bobleujr/msal-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -59,7 +59,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MsalGuard } from '@azure/msal-angular';
+import { MsalGuard } from '@bobleujr/msal-angular';
 
 const routes: Routes = [
     {
@@ -82,7 +82,7 @@ export class AppRoutingModule { }
 
 ### Interaction Type
 
-Setting the interaction type determines how the `MsalGuard` will interactively prompt for login. The `InteractionType` can be imported from `@azure/msal-browser` and set to `Popup` or `Redirect`.
+Setting the interaction type determines how the `MsalGuard` will interactively prompt for login. The `InteractionType` can be imported from `@bobleujr/msal-browser` and set to `Popup` or `Redirect`.
 
 ### Optional authRequest
 

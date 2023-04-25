@@ -1,4 +1,4 @@
-import { ApplicationTelemetry, Logger, PerformanceEvents } from "@azure/msal-common";
+import { ApplicationTelemetry, Logger, PerformanceEvents } from "@bobleujr/msal-common";
 import { name, version } from "../../src/packageMetadata";
 import { BrowserPerformanceClient } from "../../src/telemetry/BrowserPerformanceClient";
 

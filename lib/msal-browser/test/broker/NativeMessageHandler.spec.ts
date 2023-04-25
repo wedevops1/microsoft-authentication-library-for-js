@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Logger, AuthError, AuthErrorMessage } from "@azure/msal-common";
+import { Logger, AuthError, AuthErrorMessage } from "@bobleujr/msal-common";
 import sinon from "sinon";
 import { NativeMessageHandler } from "../../src/broker/nativeBroker/NativeMessageHandler";
 import { BrowserAuthError, BrowserAuthErrorMessage } from "../../src/error/BrowserAuthError";

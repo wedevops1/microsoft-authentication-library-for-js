@@ -1,7 +1,7 @@
 import { RANDOM_TEST_GUID } from "../utils/StringConstants";
 import { BrowserCrypto } from "../../src/crypto/BrowserCrypto";
 import { GuidGenerator } from "../../src/crypto/GuidGenerator";
-import { Logger } from "@azure/msal-common";
+import { Logger } from "@bobleujr/msal-common";
 
 describe("GuidGenerator Unit Tests", () => {
 

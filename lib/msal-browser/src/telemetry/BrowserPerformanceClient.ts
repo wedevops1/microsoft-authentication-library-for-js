@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Logger, PerformanceEvent, PerformanceEvents, IPerformanceClient, PerformanceClient, IPerformanceMeasurement, InProgressPerformanceEvent, ApplicationTelemetry } from "@azure/msal-common";
+import { Logger, PerformanceEvent, PerformanceEvents, IPerformanceClient, PerformanceClient, IPerformanceMeasurement, InProgressPerformanceEvent, ApplicationTelemetry } from "@bobleujr/msal-common";
 import { CryptoOptions } from "../config/Configuration";
 import { BrowserCrypto } from "../crypto/BrowserCrypto";
 import { GuidGenerator } from "../crypto/GuidGenerator";

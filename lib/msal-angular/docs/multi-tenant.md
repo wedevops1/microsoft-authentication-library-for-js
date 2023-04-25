@@ -25,8 +25,8 @@ If you allow multi-tenant authentication, and you do not wish to allow all Micro
 The tenant can also be set dynamically by instantiating a new instance of MSAL in the relevant component, as shown below.
 
 ```js
-import { PublicClientApplication } from '@azure/msal-browser';
-import { MsalService } from '@azure/msal-angular';
+import { PublicClientApplication } from '@bobleujr/msal-browser';
+import { MsalService } from '@bobleujr/msal-angular';
 
 @Component({})
 export class AppComponent implements OnInit {

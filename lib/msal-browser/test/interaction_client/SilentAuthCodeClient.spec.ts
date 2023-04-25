@@ -6,7 +6,7 @@
 import sinon from "sinon";
 import { PublicClientApplication } from "../../src/app/PublicClientApplication";
 import { TEST_CONFIG, TEST_URIS, TEST_TOKENS, TEST_DATA_CLIENT_INFO, TEST_TOKEN_LIFETIMES, RANDOM_TEST_GUID, testNavUrl } from "../utils/StringConstants";
-import { AccountInfo, TokenClaims,  AuthenticationResult,  AuthorizationCodeClient,  AuthenticationScheme } from "@azure/msal-common";
+import { AccountInfo, TokenClaims,  AuthenticationResult,  AuthorizationCodeClient,  AuthenticationScheme } from "@bobleujr/msal-common";
 import { BrowserAuthError } from "../../src/error/BrowserAuthError";
 import { SilentHandler } from "../../src/interaction_handler/SilentHandler";
 import { CryptoOps } from "../../src/crypto/CryptoOps";

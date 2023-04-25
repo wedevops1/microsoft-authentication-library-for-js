@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Logger } from "@azure/msal-common";
+import { Logger } from "@bobleujr/msal-common";
 import { CachedKeyPair } from "../crypto/CryptoOps";
 import { AsyncMemoryStorage } from "./AsyncMemoryStorage";
 

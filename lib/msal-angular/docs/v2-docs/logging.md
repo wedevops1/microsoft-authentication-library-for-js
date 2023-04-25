@@ -10,7 +10,7 @@ The logger definition has the following properties:
 You can enable logging in your app as shown below:
 
 ```js
-import { LogLevel, PublicClientApplication } from '@azure/msal-browser';
+import { LogLevel, PublicClientApplication } from '@bobleujr/msal-browser';
 
 export function loggerCallback(logLevel, message) {
     console.log(message);

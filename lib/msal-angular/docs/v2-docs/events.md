@@ -2,16 +2,16 @@
 
 Before you start here, make sure you understand how to [initialize the application object](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/initialization.md).
 
-`@azure/msal-angular` uses the event system exposed by `@azure/msal-browser`, which emits events related to auth and MSAL, and can be used for updating UI, showing error messages, and so on.
+`@bobleujr/msal-angular` uses the event system exposed by `@bobleujr/msal-browser`, which emits events related to auth and MSAL, and can be used for updating UI, showing error messages, and so on.
 
 ## Consuming events in your app
 
-Events in `@azure/msal-angular` are managed by the `MsalBroadcastService`, and are available by subscribing to the `msalSubject$` observable on the `MsalBroadcastService`. 
+Events in `@bobleujr/msal-angular` are managed by the `MsalBroadcastService`, and are available by subscribing to the `msalSubject$` observable on the `MsalBroadcastService`. 
 
 Here is an example of how you can consume the emitted events in your application:
 ```javascript
-import { MsalBroadcastService } from '@azure/msal-angular';
-import { EventMessage, EventType } from '@azure/msal-browser';
+import { MsalBroadcastService } from '@bobleujr/msal-angular';
+import { EventMessage, EventType } from '@bobleujr/msal-browser';
 
 export class AppComponent implements OnInit, OnDestroy {
   private readonly _destroying$ = new Subject<void>();
@@ -60,7 +60,7 @@ For the full example of using events, please see our sample [here](https://githu
 
 ## Table of events
 
-For more information about the `EventMessage` object, including the full table of events currently emitted by `@azure/msal-browser` (including descriptions and related payloads), please see the documentation [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/events.md).
+For more information about the `EventMessage` object, including the full table of events currently emitted by `@bobleujr/msal-browser` (including descriptions and related payloads), please see the documentation [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/events.md).
 
 ## Handling errors with events
 
@@ -69,8 +69,8 @@ As the `EventError` in `EventMessage` is defined as `AuthError | Error | null`, 
 See the example below of how an error can be cast to `AuthError` to avoid TypeScript errors:
 
 ```javascript
-import { MsalBroadcastService } from '@azure/msal-angular';
-import { EventMessage, EventType } from '@azure/msal-browser';
+import { MsalBroadcastService } from '@bobleujr/msal-angular';
+import { EventMessage, EventType } from '@bobleujr/msal-browser';
 
 export class AppComponent implements OnInit, OnDestroy {
   private readonly _destroying$ = new Subject<void>();
@@ -108,8 +108,8 @@ An example of error handling can also be found on our [MSAL Angular v2 B2C Sampl
 If you would like to update your UI when a user logs in or out of your app in a different tab or window you can subscribe to the `ACCOUNT_ADDED` and `ACCOUNT_REMOVED` events. The payload will be the `AccountInfo` object that was added or removed.
 
 ```javascript
-import { MsalService, MsalBroadcastService } from '@azure/msal-angular';
-import { EventMessage, EventType } from '@azure/msal-browser';
+import { MsalService, MsalBroadcastService } from '@bobleujr/msal-angular';
+import { EventMessage, EventType } from '@bobleujr/msal-browser';
 
 export class AppComponent implements OnInit, OnDestroy {
   private readonly _destroying$ = new Subject<void>();
@@ -157,8 +157,8 @@ See the example below for its use. A full example can also be found in our [samp
 
 ```js
 import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
-import { MsalBroadcastService} from '@azure/msal-angular';
-import { InteractionStatus } from '@azure/msal-browser';
+import { MsalBroadcastService} from '@bobleujr/msal-angular';
+import { InteractionStatus } from '@bobleujr/msal-browser';
 import { Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 
@@ -207,8 +207,8 @@ The `MsalBroadcastService` can be configured in the app.module.ts file as follow
 import { NgModule } from '@angular/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { MsalModule, MsalService, MsalGuard, MsalInterceptor, MsalBroadcastService, MsalRedirectComponent, MSAL_BROADCAST_CONFIG } from "@azure/msal-angular"; // Import MsalBroadcastService and MSAL_BROADCAST_CONFIG here
-import { PublicClientApplication, InteractionType, BrowserCacheLocation } from "@azure/msal-browser";
+import { MsalModule, MsalService, MsalGuard, MsalInterceptor, MsalBroadcastService, MsalRedirectComponent, MSAL_BROADCAST_CONFIG } from "@bobleujr/msal-angular"; // Import MsalBroadcastService and MSAL_BROADCAST_CONFIG here
+import { PublicClientApplication, InteractionType, BrowserCacheLocation } from "@bobleujr/msal-browser";
 
 @NgModule({
     imports: [

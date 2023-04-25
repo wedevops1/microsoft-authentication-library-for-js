@@ -1,4 +1,4 @@
-# CDN Usage for @azure/msal-browser
+# CDN Usage for @bobleujr/msal-browser
 
 In addition to npm, `msal` can be consumed from Microsoft-hosted CDNs.
 

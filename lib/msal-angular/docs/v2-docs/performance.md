@@ -1,6 +1,6 @@
 # Performance
 
-## How to configure `@azure/msal-angular` to use your router's navigate function for client-side navigation
+## How to configure `@bobleujr/msal-angular` to use your router's navigate function for client-side navigation
 
 By default, when MSAL.js needs to navigate from one page in your application to another it will reassign `window.location`, causing a full frame redirect to the other page and causing your application to re-render. If you're using the Angular Router this may be undesireable since the Router enables "client-side" navigation and shows or hides only the parts of the page as necessary.
 
@@ -22,7 +22,7 @@ The example below will show how to implement this when using the Angular `Router
 import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { MsalService, MsalBroadcastService, MSAL_GUARD_CONFIG, MsalGuardConfiguration, MsalCustomNavigationClient } from '@azure/msal-angular';
+import { MsalService, MsalBroadcastService, MSAL_GUARD_CONFIG, MsalGuardConfiguration, MsalCustomNavigationClient } from '@bobleujr/msal-angular';
 
 @Component({
   selector: 'app-root',

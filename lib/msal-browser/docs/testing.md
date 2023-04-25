@@ -15,7 +15,7 @@ msalTokenCache.loadExternalTokens(silentRequest, serverResponse, loadTokenOption
 
 `loadExternalTokens()` takes in a request of type `SilentRequest`, a response of type `ExternalTokenResponse`, and options of type `LoadTokenOptions`.
 
-See the type definitions for each, which can be imported from `@azure/msal-browser`:
+See the type definitions for each, which can be imported from `@bobleujr/msal-browser`:
 
 - [`SilentRequest`](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_browser.html#silentrequest)
 - [`ExternalTokenResponse`](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_common.html#externaltokenresponse)

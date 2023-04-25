@@ -10,7 +10,7 @@ import { randomUUID } from 'crypto';
 
 const sampleClientId = "test-client-id";
 const authority = "https://login.microsoftonline.com/common";
-const libraryName = "@azure/msal-common";
+const libraryName = "@bobleujr/msal-common";
 const libraryVersion = "1.0.0";
 const samplePerfDuration = 50;
 const sampleApplicationTelemetry: ApplicationTelemetry = {

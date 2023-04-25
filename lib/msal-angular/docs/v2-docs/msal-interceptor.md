@@ -18,8 +18,8 @@ Your configuration may look like the below. See our [configuration doc](https://
 import { NgModule } from '@angular/core';
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
-import { MsalModule, MsalRedirectComponent, MsalGuard, MsalInterceptor } from '@azure/msal-angular'; // Import MsalInterceptor
-import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
+import { MsalModule, MsalRedirectComponent, MsalGuard, MsalInterceptor } from '@bobleujr/msal-angular'; // Import MsalInterceptor
+import { InteractionType, PublicClientApplication } from '@bobleujr/msal-browser';
 
 @NgModule({
     declarations: [
@@ -53,7 +53,7 @@ export class AppModule { }
 
 ### Interaction Type
 
-While the `MsalInterceptor` is designed to acquire tokens silently, in the event that a silent request fails, it will fall back to acquiring tokens interactively. The `InteractionType` can be imported from `@azure/msal-browser` and set to `Popup` or `Redirect`.
+While the `MsalInterceptor` is designed to acquire tokens silently, in the event that a silent request fails, it will fall back to acquiring tokens interactively. The `InteractionType` can be imported from `@bobleujr/msal-browser` and set to `Popup` or `Redirect`.
 
 ```javascript
 {

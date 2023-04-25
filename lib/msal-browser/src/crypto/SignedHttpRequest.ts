@@ -4,7 +4,7 @@
  */
 
 import { CryptoOps } from "./CryptoOps";
-import { Logger, LoggerOptions, PopTokenGenerator, SignedHttpRequestParameters } from "@azure/msal-common";
+import { Logger, LoggerOptions, PopTokenGenerator, SignedHttpRequestParameters } from "@bobleujr/msal-common";
 import { version, name } from "../packageMetadata";
 
 export type SignedHttpRequestOptions = {

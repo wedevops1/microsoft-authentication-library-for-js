@@ -105,7 +105,7 @@ return fetch(resourceEndpointData.endpoint, options)
 3. In order to extract the server nonce from said `WWW-Authenticate` header, MSAL exposes the `AuthenticationHeaderParser` class, which includes the `getShrNonce` API that will parse the server nonce out of the authentication headers it comes in:
 
 ```typescript
-import { PublicClientApplication, AuthenticationHeaderParser } from "@azure/msal-browser";
+import { PublicClientApplication, AuthenticationHeaderParser } from "@bobleujr/msal-browser";
 
 ...
 
@@ -133,7 +133,7 @@ return fetch(resourceEndpointData.endpoint, options)
 4. Now that the `shrNonce` has been acquired for the first time, the `PoP Token` can be requested again, including a valid nonce, and the authorized resource request can be completed successfully. The `200 OK` successful response will now include a `Authentication-Info` header that will have a `nextnonce` challenge, which can be parsed by MSAL in the same way as the `WWW-Authenticate` nonce:
 
 ```typescript
-import { PublicClientApplication, AuthenticationHeaderParser } from "@azure/msal-browser";
+import { PublicClientApplication, AuthenticationHeaderParser } from "@bobleujr/msal-browser";
 
 // 1. Configure PoP Token Request without a valid SHR Nonce
 const popTokenRequest = {
@@ -191,7 +191,7 @@ The following script proposes the recommended way to handle `PoP Token` Requests
  * Application script
  */
 
-import { PublicClientApplication, AuthenticationHeaderParser } from "@azure/msal-browser";
+import { PublicClientApplication, AuthenticationHeaderParser } from "@bobleujr/msal-browser";
 const publicClientApplication = new PublicClientApplication(msalConfig);
 
 // Initialize header map to keep track of the "last" response's headers.

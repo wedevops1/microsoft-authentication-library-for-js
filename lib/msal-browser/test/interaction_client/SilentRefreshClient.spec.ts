@@ -6,7 +6,7 @@
 import sinon from "sinon";
 import { PublicClientApplication } from "../../src/app/PublicClientApplication";
 import { TEST_CONFIG, TEST_TOKENS, TEST_DATA_CLIENT_INFO, TEST_TOKEN_LIFETIMES, RANDOM_TEST_GUID } from "../utils/StringConstants";
-import { Constants, AccountInfo, TokenClaims, AuthenticationResult, AuthenticationScheme, RefreshTokenClient, CommonSilentFlowRequest } from "@azure/msal-common";
+import { Constants, AccountInfo, TokenClaims, AuthenticationResult, AuthenticationScheme, RefreshTokenClient, CommonSilentFlowRequest } from "@bobleujr/msal-common";
 import { CryptoOps } from "../../src/crypto/CryptoOps";
 import { BrowserAuthError } from "../../src/error/BrowserAuthError";
 import { SilentRefreshClient } from "../../src/interaction_client/SilentRefreshClient";

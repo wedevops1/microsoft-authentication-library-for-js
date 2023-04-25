@@ -18,7 +18,7 @@
 
 This error is thrown when an interactive API (`loginPopup`, `loginRedirect`, `acquireTokenPopup`, `acquireTokenRedirect`) is invoked while another interactive API is still in progress. The login and acquireToken APIs are async so you will need to ensure that the resulting promises have resolved before invoking another one.
 
-In `@azure/msal-angular` there are 2 common scenarios when this can happen:
+In `@bobleujr/msal-angular` there are 2 common scenarios when this can happen:
 
 1. Your application is not handling redirects correctly. The error then occurs when either the app or the user tries to call an interactive API. 
 1. Your application is calling one of the above APIs without first checking if interaction is already in progress elsewhere.
@@ -27,13 +27,13 @@ Redirects **must** be handled either with the `MsalRedirectComponent` or with ca
 
 Additionally, any interaction should be done after subscribing to the `inProgress$` observable and filtering for `InteractionStatus.None`. Attempting interaction while another is in progress is not supported and will result in the error above. Checking for `InteractionStatus.None` is how you ensure this does not happen. Please see our [events doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/events.md#the-inprogress-observable) for more details. 
 
-Please see the [`@azure/msal-browser` error doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/errors.md) for more information on this error.
+Please see the [`@bobleujr/msal-browser` error doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/errors.md) for more information on this error.
 
 ❌ The following example will throw this error when another component has already invoked an interactive API that is in progress:
 
 ```javascript
 import { Component, OnInit } from '@angular/core';
-import { MsalService, MsalBroadcastService, InteractionStatus } from '@azure/msal-angular';
+import { MsalService, MsalBroadcastService, InteractionStatus } from '@bobleujr/msal-angular';
 import { filter } from 'rxjs/operators';
 
 @Component()
@@ -53,8 +53,8 @@ export class ExampleComponent implements OnInit {
 
 ```javascript
 import { Component, OnInit } from '@angular/core';
-import { InteractionStatus } from '@azure/msal-browser';
-import { MsalService, MsalBroadcastService } from '@azure/msal-angular';
+import { InteractionStatus } from '@bobleujr/msal-browser';
+import { MsalService, MsalBroadcastService } from '@bobleujr/msal-angular';
 import { filter } from 'rxjs/operators';
 
 @Component()

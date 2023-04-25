@@ -5,7 +5,7 @@
 
 /**
  * @packageDocumentation
- * @module @azure/msal-common
+ * @module @bobleujr/msal-common
  */
 
 export { AuthorizationCodeClient} from "./client/AuthorizationCodeClient";

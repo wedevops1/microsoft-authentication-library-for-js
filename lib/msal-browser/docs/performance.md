@@ -57,9 +57,9 @@ Applications that want to measure the performance of authentication flows in MSA
 
 ### addPerformanceCallback
 
-Since version `@azure/msal-browser@2.23.0`, applications can register a callback to receive performance measurements taken by the library. These measurement will include end-to-end measurements for top-level APIs, as well as measurements for important internal APIs.
+Since version `@bobleujr/msal-browser@2.23.0`, applications can register a callback to receive performance measurements taken by the library. These measurement will include end-to-end measurements for top-level APIs, as well as measurements for important internal APIs.
 
-**Note for MSFT first-party applications**: We will be publishing an internal build of `@azure/msal-browser` that is already instrumented to capture this telemetry. Contact us for more details.
+**Note for MSFT first-party applications**: We will be publishing an internal build of `@bobleujr/msal-browser` that is already instrumented to capture this telemetry. Contact us for more details.
 
 #### Example
 
@@ -92,7 +92,7 @@ const event: PerformanceEvent = {
     cryptoOptsSignJwtDurationMs: 8,
     clientId: "b50703d7-d12b-4ddc-8758-91053fe0aba4",
     authority: "https://login.microsoftonline.com/common",
-    libraryName: "@azure/msal-browser-1p",
+    libraryName: "@bobleujr/msal-browser-1p",
     libraryVersion: "2.22.2-beta.2",
     appName: "my-application",
     appVersion: "1.0.0"

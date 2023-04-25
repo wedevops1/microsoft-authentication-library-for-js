@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthenticationResult, AccountInfo, Logger, PerformanceCallbackFunction } from "@azure/msal-common";
+import { AuthenticationResult, AccountInfo, Logger, PerformanceCallbackFunction } from "@bobleujr/msal-common";
 import { RedirectRequest } from "../request/RedirectRequest";
 import { PopupRequest } from "../request/PopupRequest";
 import { SilentRequest } from "../request/SilentRequest";

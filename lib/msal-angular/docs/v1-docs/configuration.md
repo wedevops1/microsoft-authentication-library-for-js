@@ -21,7 +21,7 @@ MSAL for Angular accepts to configuration objects:
 The `MsalModule` class contains a static method that can be called in your `app.module.ts` file:
 
 ```typescript
-import { MsalModule, MsalService, MsalInterceptor } from '@azure/msal-angular';
+import { MsalModule, MsalService, MsalInterceptor } from '@bobleujr/msal-angular';
 
 @NgModule({
     imports: [
@@ -74,7 +74,7 @@ import {
   MSAL_CONFIG_ANGULAR,
   MsalService,
   MsalAngularConfiguration
-} from '@azure/msal-angular';
+} from '@bobleujr/msal-angular';
 import { Configuration } from 'msal';
 
 function MSALConfigFactory(): Configuration {
@@ -143,7 +143,7 @@ import {
   MsalModule,
   MsalInterceptor,
   MsalService,
-} from '@azure/msal-angular';
+} from '@bobleujr/msal-angular';
 
 @NgModule({
   imports: [
@@ -169,7 +169,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import { MSAL_CONFIG, MSAL_CONFIG_ANGULAR } from '@azure/msal-angular';
+import { MSAL_CONFIG, MSAL_CONFIG_ANGULAR } from '@bobleujr/msal-angular';
 
 if (environment.production) {
   enableProdMode();

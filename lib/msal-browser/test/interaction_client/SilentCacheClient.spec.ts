@@ -7,7 +7,7 @@ import sinon from "sinon";
 import { PublicClientApplication, BrowserAuthError } from "../../src";
 import { TEST_CONFIG, ID_TOKEN_CLAIMS, TEST_TOKENS, DEFAULT_OPENID_CONFIG_RESPONSE } from "../utils/StringConstants";
 import { SilentCacheClient } from "../../src/interaction_client/SilentCacheClient";
-import { AuthToken, CacheManager, IdTokenEntity, AccountEntity, AccessTokenEntity, CredentialType, AuthenticationScheme, RefreshTokenEntity, TimeUtils, AuthenticationResult, AccountInfo, Authority } from "@azure/msal-common";
+import { AuthToken, CacheManager, IdTokenEntity, AccountEntity, AccessTokenEntity, CredentialType, AuthenticationScheme, RefreshTokenEntity, TimeUtils, AuthenticationResult, AccountInfo, Authority } from "@bobleujr/msal-common";
 
 const testAccountEntity: AccountEntity = new AccountEntity();
 testAccountEntity.homeAccountId = `${ID_TOKEN_CLAIMS.oid}.${ID_TOKEN_CLAIMS.tid}`;

@@ -4,7 +4,7 @@
  */
 
 import { NativeExtensionMethod } from "../../utils/BrowserConstants";
-import { StringDict } from "@azure/msal-common";
+import { StringDict } from "@bobleujr/msal-common";
 
 /**
  * Token request which native broker will use to acquire tokens

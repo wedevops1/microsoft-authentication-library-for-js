@@ -4,7 +4,7 @@
  */
 
 import { InteractionType } from "./BrowserConstants";
-import { StringUtils, ClientAuthError, ICrypto, RequestStateObject, ProtocolUtils, ServerAuthorizationCodeResponse, UrlString } from "@azure/msal-common";
+import { StringUtils, ClientAuthError, ICrypto, RequestStateObject, ProtocolUtils, ServerAuthorizationCodeResponse, UrlString } from "@bobleujr/msal-common";
 
 export type BrowserStateObject = {
     interactionType: InteractionType

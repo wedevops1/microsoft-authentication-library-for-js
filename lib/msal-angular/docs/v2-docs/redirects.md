@@ -6,14 +6,14 @@ When using redirects with MSAL, it is **mandatory** to handle redirects with eit
 
 This is our recommended approach for handling redirects:
 
-- `@azure/msal-angular` provides a dedicated redirect component that can be imported  into your application. We recommend importing the `MsalRedirectComponent` and bootstrapping this alongside `AppComponent` in your application on the `app.module.ts`, as this will handle all redirects without your components needing to subscribe to `handleRedirectObservable()` manually.
+- `@bobleujr/msal-angular` provides a dedicated redirect component that can be imported  into your application. We recommend importing the `MsalRedirectComponent` and bootstrapping this alongside `AppComponent` in your application on the `app.module.ts`, as this will handle all redirects without your components needing to subscribe to `handleRedirectObservable()` manually.
 - Pages that wish to perform functions following redirects (e.g. user account functions, UI changes, etc) should subscribe to the `inProgress$` observable, filtering for `InteractionStatus.None`. This will ensure that there are no interactions in progress when performing the functions. Note that the last / most recent `InteractionStatus` will also be available when subscribing to the `inProgress$` observable. Please see our documentation on [events](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/events.md#the-inprogress-observable) for more information on checking for interactions.
 - If you do not wish to use the `MsalRedirectComponent`, you **must** handle redirects with `handleRedirectObservable()` yourself, as laid out in the approach below.
 - See our [Angular 10](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-angular-v2-samples/angular10-sample-app), [Angular 11](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-angular-v2-samples/angular11-sample-app) and [Angular 11 B2C samples](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-angular-v2-samples/angular11-b2c-sample) for examples of this approach.
 
 msal.redirect.component.ts
 ```js
-// This component is part of @azure/msal-angular and can be imported and bootstrapped
+// This component is part of @bobleujr/msal-angular and can be imported and bootstrapped
 import { Component, OnInit } from "@angular/core";
 import { MsalService } from "./msal.service.ts";
 
@@ -58,8 +58,8 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
-import { MsalGuard, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, MsalModule, MsalService, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, MsalGuardConfiguration, MsalRedirectComponent } from '@azure/msal-angular'; // Redirect component imported from msal-angular
+import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation, LogLevel } from '@bobleujr/msal-browser';
+import { MsalGuard, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, MsalModule, MsalService, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, MsalGuardConfiguration, MsalRedirectComponent } from '@bobleujr/msal-angular'; // Redirect component imported from msal-angular
 
 const isIE = window.navigator.userAgent.indexOf("MSIE ") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1;
 
@@ -149,7 +149,7 @@ export class AppModule { }
 app.component.ts
 ```js
 import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
-import { MsalBroadcastService, InteractionStatus } from '@azure/msal-angular';
+import { MsalBroadcastService, InteractionStatus } from '@bobleujr/msal-angular';
 import { Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 
@@ -189,8 +189,8 @@ This is not our recommended approach, but if you are unable to bootstrap the `Ms
 Example of home.component.ts file:
 ```js
 import { Component, OnInit } from '@angular/core';
-import { MsalBroadcastService, MsalService } from '@azure/msal-angular';
-import { AuthenticationResult } from '@azure/msal-browser';
+import { MsalBroadcastService, MsalService } from '@bobleujr/msal-angular';
+import { AuthenticationResult } from '@bobleujr/msal-browser';
 
 @Component({
   selector: 'app-home',

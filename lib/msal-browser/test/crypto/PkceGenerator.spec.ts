@@ -1,7 +1,7 @@
 import { BrowserCrypto } from "../../src/crypto/BrowserCrypto";
 import { createHash } from "crypto";
 import { PkceGenerator } from "../../src/crypto/PkceGenerator";
-import { Logger, PkceCodes } from "@azure/msal-common";
+import { Logger, PkceCodes } from "@bobleujr/msal-common";
 import { NUM_TESTS } from "../utils/StringConstants";
 import { MsBrowserCrypto } from "../../src/crypto/MsBrowserCrypto";
 const msrCrypto = require("../polyfills/msrcrypto.min");

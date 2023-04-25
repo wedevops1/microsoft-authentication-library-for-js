@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthorizationCodeClient, StringUtils, CommonAuthorizationCodeRequest, ICrypto, AuthenticationResult, Authority, INetworkModule, ClientAuthError, Logger, ServerError } from "@azure/msal-common";
+import { AuthorizationCodeClient, StringUtils, CommonAuthorizationCodeRequest, ICrypto, AuthenticationResult, Authority, INetworkModule, ClientAuthError, Logger, ServerError } from "@bobleujr/msal-common";
 import { BrowserAuthError, BrowserAuthErrorMessage } from "../error/BrowserAuthError";
 import { ApiId, TemporaryCacheKeys } from "../utils/BrowserConstants";
 import { BrowserCacheManager } from "../cache/BrowserCacheManager";

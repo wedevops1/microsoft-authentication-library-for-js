@@ -6,7 +6,7 @@
 import { Inject, Injectable, Optional } from "@angular/core";
 import { BehaviorSubject, Observable, ReplaySubject, Subject } from "rxjs";
 import { MSAL_BROADCAST_CONFIG, MSAL_INSTANCE } from "./constants";
-import { EventMessage, EventMessageUtils, IPublicClientApplication, InteractionStatus } from "@azure/msal-browser";
+import { EventMessage, EventMessageUtils, IPublicClientApplication, InteractionStatus } from "@bobleujr/msal-browser";
 import { MsalService } from "./msal.service";
 import { MsalBroadcastConfiguration } from "./msal.broadcast.config";
 

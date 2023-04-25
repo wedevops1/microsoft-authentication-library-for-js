@@ -1,6 +1,6 @@
 # Internet Explorer support for MSAL Angular v2
 
-`@azure/msal-angular` supports Internet Explorer 11 with the following changes.
+`@bobleujr/msal-angular` supports Internet Explorer 11 with the following changes.
 
 ## MSAL configuration
 

@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthenticationScheme, AccountInfo, PromptValue, AuthenticationResult, AccountEntity, IdTokenEntity, AccessTokenEntity, CredentialType, TimeUtils, CacheManager} from "@azure/msal-common";
+import { AuthenticationScheme, AccountInfo, PromptValue, AuthenticationResult, AccountEntity, IdTokenEntity, AccessTokenEntity, CredentialType, TimeUtils, CacheManager} from "@bobleujr/msal-common";
 import sinon from "sinon";
 import { NativeMessageHandler } from "../../src/broker/nativeBroker/NativeMessageHandler";
 import { ApiId } from "../../src/utils/BrowserConstants";

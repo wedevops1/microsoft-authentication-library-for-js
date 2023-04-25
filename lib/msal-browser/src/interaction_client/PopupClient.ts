@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthenticationResult, CommonAuthorizationCodeRequest, AuthorizationCodeClient, ThrottlingUtils, CommonEndSessionRequest, UrlString, AuthError, OIDC_DEFAULT_SCOPES, Constants, ProtocolUtils, ServerAuthorizationCodeResponse, PerformanceEvents, StringUtils, IPerformanceClient, Logger, ICrypto } from "@azure/msal-common";
+import { AuthenticationResult, CommonAuthorizationCodeRequest, AuthorizationCodeClient, ThrottlingUtils, CommonEndSessionRequest, UrlString, AuthError, OIDC_DEFAULT_SCOPES, Constants, ProtocolUtils, ServerAuthorizationCodeResponse, PerformanceEvents, StringUtils, IPerformanceClient, Logger, ICrypto } from "@bobleujr/msal-common";
 import { StandardInteractionClient } from "./StandardInteractionClient";
 import { EventType } from "../event/EventType";
 import { InteractionType, ApiId, BrowserConstants } from "../utils/BrowserConstants";

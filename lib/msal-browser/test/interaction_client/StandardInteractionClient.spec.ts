@@ -4,7 +4,7 @@
  */
 
 import sinon from "sinon";
-import { ResponseMode, AuthenticationScheme, AzureCloudOptions, AzureCloudInstance, Authority } from "@azure/msal-common";
+import { ResponseMode, AuthenticationScheme, AzureCloudOptions, AzureCloudInstance, Authority } from "@bobleujr/msal-common";
 import { PublicClientApplication } from "../../src/app/PublicClientApplication";
 import { StandardInteractionClient } from "../../src/interaction_client/StandardInteractionClient";
 import { EndSessionRequest } from "../../src/request/EndSessionRequest";

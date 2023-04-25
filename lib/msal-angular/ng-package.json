@@ -4,7 +4,7 @@
   "lib": {
     "entryFile": "src/public-api.ts",
     "umdModuleIds": {
-      "@azure/msal-browser": "@azure/msal-browser"
+      "@bobleujr/msal-browser": "@bobleujr/msal-browser"
     }
   }
 }

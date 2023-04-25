@@ -1,8 +1,8 @@
 import { Base64Decode } from "../../src/encode/Base64Decode";
-import { IdTokenClaims, Constants } from "@azure/msal-common";
+import { IdTokenClaims, Constants } from "@bobleujr/msal-common";
 import { TEST_DATA_CLIENT_INFO, TEST_URIS, TEST_CONFIG, RANDOM_TEST_GUID } from "../utils/StringConstants";
 import { Base64Encode } from "../../src/encode/Base64Encode";
-import { CommonAuthorizationCodeRequest } from "@azure/msal-common";
+import { CommonAuthorizationCodeRequest } from "@bobleujr/msal-common";
 
 describe("Base64Decode.ts Unit Tests", () => {
 

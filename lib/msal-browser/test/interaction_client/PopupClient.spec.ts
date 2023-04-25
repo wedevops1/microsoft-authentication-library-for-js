@@ -6,7 +6,7 @@
 import sinon from "sinon";
 import { PublicClientApplication } from "../../src/app/PublicClientApplication";
 import { TEST_CONFIG, TEST_URIS, TEST_HASHES, TEST_TOKENS, TEST_DATA_CLIENT_INFO, TEST_TOKEN_LIFETIMES, RANDOM_TEST_GUID, testNavUrl, TEST_STATE_VALUES, TEST_SSH_VALUES, DEFAULT_OPENID_CONFIG_RESPONSE, DEFAULT_TENANT_DISCOVERY_RESPONSE } from "../utils/StringConstants";
-import { Constants, AccountInfo, TokenClaims, AuthenticationResult, CommonAuthorizationUrlRequest, AuthorizationCodeClient, ResponseMode, AuthenticationScheme, ServerTelemetryEntity, AccountEntity, CommonEndSessionRequest, PersistentCacheKeys, ClientConfigurationError, Authority, CommonAuthorizationCodeRequest, AuthError } from "@azure/msal-common";
+import { Constants, AccountInfo, TokenClaims, AuthenticationResult, CommonAuthorizationUrlRequest, AuthorizationCodeClient, ResponseMode, AuthenticationScheme, ServerTelemetryEntity, AccountEntity, CommonEndSessionRequest, PersistentCacheKeys, ClientConfigurationError, Authority, CommonAuthorizationCodeRequest, AuthError } from "@bobleujr/msal-common";
 import { TemporaryCacheKeys, ApiId, BrowserConstants } from "../../src/utils/BrowserConstants";
 import { CryptoOps } from "../../src/crypto/CryptoOps";
 import { NavigationClient } from "../../src/navigation/NavigationClient";

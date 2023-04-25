@@ -1,10 +1,10 @@
 # Accounts in MSAL Browser
 
-> This is the platform-specific Accounts documentation for `@azure/msal-browser`. For the general documentation of the `AccountInfo` object structure, please visit the `@azure/msal-common` [Accounts document](../../msal-common/docs/Accounts.md).
+> This is the platform-specific Accounts documentation for `@bobleujr/msal-browser`. For the general documentation of the `AccountInfo` object structure, please visit the `@bobleujr/msal-common` [Accounts document](../../msal-common/docs/Accounts.md).
 
 ## Usage
 
-The `@azure/msal-browser` library provides the following APIs to access cached accounts:
+The `@bobleujr/msal-browser` library provides the following APIs to access cached accounts:
 
 * `getAllAccounts()`: returns all the accounts currently in the cache. An application must choose an account to acquire tokens silently.
 * `getAccountByHomeId()`: receives a `homeAccountId` string and returns the matching account from the cache.
@@ -50,7 +50,7 @@ async function getTokenPopup(request, account) {
 
 ## Active Account APIs
 
-The `@azure/msal-browser` library also provides 2 convenient APIs to help you keep track of which account is currently "active" and should be used for token requests.
+The `@bobleujr/msal-browser` library also provides 2 convenient APIs to help you keep track of which account is currently "active" and should be used for token requests.
 
 * `getActiveAccount()`: Returns the currently active account
 * `setActiveAccount()`: Receives an account object and sets it as the active account

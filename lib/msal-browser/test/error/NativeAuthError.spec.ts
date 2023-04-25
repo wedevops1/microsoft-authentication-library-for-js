@@ -1,5 +1,5 @@
 import { NativeAuthError, NativeAuthErrorMessage, NativeStatusCode } from "../../src/error/NativeAuthError";
-import { InteractionRequiredAuthError, InteractionRequiredAuthErrorMessage } from "@azure/msal-common";
+import { InteractionRequiredAuthError, InteractionRequiredAuthErrorMessage } from "@bobleujr/msal-common";
 import { BrowserAuthError, BrowserAuthErrorMessage } from "../../src/error/BrowserAuthError";
 
 describe("NativeAuthError Unit Tests", () => {

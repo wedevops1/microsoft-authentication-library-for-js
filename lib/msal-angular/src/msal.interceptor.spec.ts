@@ -3,7 +3,7 @@ import { HTTP_INTERCEPTORS, HttpClient } from "@angular/common/http";
 import { HttpClientTestingModule, HttpTestingController } from "@angular/common/http/testing";
 import { Location } from "@angular/common";
 import { RouterTestingModule } from "@angular/router/testing";
-import { AccountInfo, AuthError, InteractionType, IPublicClientApplication, PublicClientApplication, SilentRequest } from '@azure/msal-browser';
+import { AccountInfo, AuthError, InteractionType, IPublicClientApplication, PublicClientApplication, SilentRequest } from '@bobleujr/msal-browser';
 import { MsalModule, MsalService, MsalInterceptor, MsalBroadcastService, MsalInterceptorConfiguration, ProtectedResourceScopes } from './public-api';
 
 let interceptor: MsalInterceptor;

@@ -4,7 +4,7 @@
  */
 
 import sinon from "sinon";
-import { Logger, LogLevel,IdTokenEntity, AccessTokenEntity, ScopeSet, ExternalTokenResponse, AccountEntity, AuthToken, AuthorityType, RefreshTokenEntity } from "@azure/msal-common";
+import { Logger, LogLevel,IdTokenEntity, AccessTokenEntity, ScopeSet, ExternalTokenResponse, AccountEntity, AuthToken, AuthorityType, RefreshTokenEntity } from "@bobleujr/msal-common";
 import { TokenCache, LoadTokenOptions } from "../../src/cache/TokenCache";
 import { CryptoOps } from "../../src/crypto/CryptoOps";
 import { BrowserCacheManager } from "../../src/cache/BrowserCacheManager";

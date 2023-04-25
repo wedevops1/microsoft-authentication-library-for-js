@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { ICrypto, IPerformanceClient, JoseHeader, Logger, PerformanceEvents, PkceCodes, SignedHttpRequest, SignedHttpRequestParameters } from "@azure/msal-common";
+import { ICrypto, IPerformanceClient, JoseHeader, Logger, PerformanceEvents, PkceCodes, SignedHttpRequest, SignedHttpRequestParameters } from "@bobleujr/msal-common";
 import { GuidGenerator } from "./GuidGenerator";
 import { Base64Encode } from "../encode/Base64Encode";
 import { Base64Decode } from "../encode/Base64Decode";

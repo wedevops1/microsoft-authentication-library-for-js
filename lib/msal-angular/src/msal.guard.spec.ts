@@ -2,7 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { UrlTree } from '@angular/router';
 import { Location } from "@angular/common";
-import { BrowserSystemOptions, BrowserUtils, InteractionType, IPublicClientApplication, LogLevel, PublicClientApplication, UrlString } from '@azure/msal-browser';
+import { BrowserSystemOptions, BrowserUtils, InteractionType, IPublicClientApplication, LogLevel, PublicClientApplication, UrlString } from '@bobleujr/msal-browser';
 import { of } from 'rxjs';
 import { MsalGuardConfiguration } from './msal.guard.config';
 import { MsalModule, MsalGuard, MsalService, MsalBroadcastService } from './public-api';

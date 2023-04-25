@@ -5,7 +5,7 @@
 
 /**
  * @packageDocumentation
- * @module @azure/msal-angular
+ * @module @bobleujr/msal-angular
  */
 
 export { MsalService } from "./msal.service";

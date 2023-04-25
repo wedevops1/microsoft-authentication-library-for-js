@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthenticationResult, AuthError, AccountInfo } from "@azure/msal-common";
+import { AuthenticationResult, AuthError, AccountInfo } from "@bobleujr/msal-common";
 import { EventType } from "./EventType";
 import { InteractionStatus, InteractionType } from "../utils/BrowserConstants";
 import { PopupRequest, RedirectRequest, SilentRequest, SsoSilentRequest, EndSessionRequest } from "..";

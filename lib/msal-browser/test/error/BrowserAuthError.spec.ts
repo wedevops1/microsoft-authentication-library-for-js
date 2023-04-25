@@ -1,5 +1,5 @@
 import { BrowserAuthError, BrowserAuthErrorMessage } from "../../src/error/BrowserAuthError";
-import { AuthError } from "@azure/msal-common";
+import { AuthError } from "@bobleujr/msal-common";
 
 describe("BrowserAuthError Unit Tests", () => {
 

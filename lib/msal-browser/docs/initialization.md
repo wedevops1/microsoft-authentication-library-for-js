@@ -17,7 +17,7 @@ In this document:
 
 In order to use MSAL.js, you need to instantiate a `PublicClientApplication` object. You must provide the `client id` (`appId`) of your application. 
 ```javascript
-import * as msal from "@azure/msal-browser";
+import * as msal from "@bobleujr/msal-browser";
 
 const msalConfig = {
     auth: {

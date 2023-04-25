@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { OIDC_DEFAULT_SCOPES } from "@azure/msal-common";
+import { OIDC_DEFAULT_SCOPES } from "@bobleujr/msal-common";
 import { PopupRequest } from "../request/PopupRequest";
 import { RedirectRequest } from "../request/RedirectRequest";
 
@@ -171,7 +171,7 @@ export const KEY_FORMAT_JWK = "jwk";
 // Supported wrapper SKUs
 export enum WrapperSKU {
     React = "@azure/msal-react",
-    Angular = "@azure/msal-angular"
+    Angular = "@bobleujr/msal-angular"
 }
 
 // DatabaseStorage Constants

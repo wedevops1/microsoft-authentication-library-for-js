@@ -182,7 +182,7 @@ Remember that you will need to register this new `redirectUri` on your App Regis
 
 **Notes regarding Angular and React:**
 
-- If you are using `@azure/msal-angular` your `redirectUri` page should not be protected by the `MsalGuard`.
+- If you are using `@bobleujr/msal-angular` your `redirectUri` page should not be protected by the `MsalGuard`.
 - If you are using `@azure/msal-react` your `redirectUri` page should not render the `MsalAuthenticationComponent` or use the `useMsalAuthentication` hook.
 
 #### Issues caused by the Identity Provider

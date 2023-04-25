@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { ExternalTokenResponse, AuthenticationResult } from "@azure/msal-common";
+import { ExternalTokenResponse, AuthenticationResult } from "@bobleujr/msal-common";
 import { SilentRequest } from "../request/SilentRequest";
 import { LoadTokenOptions } from "./TokenCache";
 

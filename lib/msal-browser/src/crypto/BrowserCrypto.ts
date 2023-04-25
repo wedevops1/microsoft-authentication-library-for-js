@@ -9,7 +9,7 @@ import { ISubtleCrypto } from "./ISubtleCrypto";
 import { ModernBrowserCrypto } from "./ModernBrowserCrypto";
 import { MsrBrowserCrypto } from "./MsrBrowserCrypto";
 import { MsBrowserCrypto } from "./MsBrowserCrypto";
-import { Logger } from "@azure/msal-common";
+import { Logger } from "@bobleujr/msal-common";
 import { BrowserConfigurationAuthError } from "../error/BrowserConfigurationAuthError";
 import { CryptoOptions } from "../config/Configuration";
 /**

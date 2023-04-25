@@ -5,13 +5,13 @@
 
 1. [What browsers are supported?](#what-browsers-are-supported)
 1. [What versions of Angular are supported?](#what-versions-of-angular-are-supported)
-1. [Does `@azure/msal-angular` support Server Side Rendering?](#does-azuremsal-angular-support-server-side-rendering)
-1. [Can `@azure/msal-angular` be used with Internet Explorer?](#can-azuremsal-angular-be-used-with-internet-explorer)
-1. [Can `@azure/msal-angular` be used with Microsoft Graph JavaScript SDK?](#can-azuremsal-angular-be-used-with-microsoft-graph-javascript-sdk)
+1. [Does `@bobleujr/msal-angular` support Server Side Rendering?](#does-azuremsal-angular-support-server-side-rendering)
+1. [Can `@bobleujr/msal-angular` be used with Internet Explorer?](#can-azuremsal-angular-be-used-with-internet-explorer)
+1. [Can `@bobleujr/msal-angular` be used with Microsoft Graph JavaScript SDK?](#can-azuremsal-angular-be-used-with-microsoft-graph-javascript-sdk)
 
 **[Configuration](#configuration)**
 
-1. [What is the difference between `@azure/msal-angular` v2 and v1?](#what-is-the-difference-between-azuremsal-angular-v2-and-v1)
+1. [What is the difference between `@bobleujr/msal-angular` v2 and v1?](#what-is-the-difference-between-azuremsal-angular-v2-and-v1)
 1. [How do I add tokens to API calls?](#how-do-i-add-tokens-to-api-calls)
 1. [How do I use my app with path/hash location strategy?](#how-do-i-use-my-app-with-pathhash-location-strategy)
 1. [How do I make sure all events are available when using path location strategy?](#how-do-i-make-sure-all-events-are-available-when-using-path-location-strategy)
@@ -44,27 +44,27 @@ Please see [here](https://github.com/AzureAD/microsoft-authentication-library-fo
 
 Msal Angular currently supports Angular 9, 10, 11, 12, 13 and 14.
 
-### Does `@azure/msal-angular` support Server Side Rendering?
+### Does `@bobleujr/msal-angular` support Server Side Rendering?
 
 Yes, server side rendering is supported through Angular universal. See our doc [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/angular-universal.md) for more information.
 
-### Can `@azure/msal-angular` be used with Internet Explorer?
+### Can `@bobleujr/msal-angular` be used with Internet Explorer?
 
-Yes, `@azure/msal-angular` does support IE 11. More information can on configuration can be found [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/ie-support.md).
+Yes, `@bobleujr/msal-angular` does support IE 11. More information can on configuration can be found [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/ie-support.md).
 
-## Can `@azure/msal-angular` be used with Microsoft Graph JavaScript SDK?
+## Can `@bobleujr/msal-angular` be used with Microsoft Graph JavaScript SDK?
 
-Yes, `@azure/msal-angular` can be used as a custom authentication provider for the [Microsoft Graph JavaScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript). For an implementation, please refer to the sample: [Angular SPA calling Graph API](https://github.com/Azure-Samples/ms-identity-javascript-angular-tutorial/tree/main/2-Authorization-I/1-call-graph).
+Yes, `@bobleujr/msal-angular` can be used as a custom authentication provider for the [Microsoft Graph JavaScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript). For an implementation, please refer to the sample: [Angular SPA calling Graph API](https://github.com/Azure-Samples/ms-identity-javascript-angular-tutorial/tree/main/2-Authorization-I/1-call-graph).
 
 ## Configuration
 
-### What is the difference between `@azure/msal-angular` v2 and v1?
+### What is the difference between `@bobleujr/msal-angular` v2 and v1?
 
-Please see our [upgrade guide](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/v1-v2-upgrade-guide.md) for information on the differences between `@azure/msal-angular` v1 and v2, as well as changes to watch out for when upgrading.
+Please see our [upgrade guide](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/v1-v2-upgrade-guide.md) for information on the differences between `@bobleujr/msal-angular` v1 and v2, as well as changes to watch out for when upgrading.
 
 ### How do I add tokens to API calls?
 
-`@azure/msal-angular` provides the `MsalInterceptor` for obtaining tokens and adding them to HTTP requests. You may find the following links helpful:
+`@bobleujr/msal-angular` provides the `MsalInterceptor` for obtaining tokens and adding them to HTTP requests. You may find the following links helpful:
 
 * [MsalInterceptor doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/msal-interceptor.md) for details on configuration and use
 * [Initialization doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/initialization.md#get-tokens-for-web-api-calls) for basic set up
@@ -75,7 +75,7 @@ Please note that the `MsalInterceptor` is optional. You may wish to explicitly a
 
 ### How do I use my app with path/hash location strategy?
 
-`@azure/msal-angular` supports both the `PathLocationStrategy` and `HashLocationStrategy`, which can be configured in the `app-routing.module.ts` of your app. See our [samples list](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-angular-v2-samples) for the routing strategy demonstrated by each sample. See the [Angular docs](https://angular.io/guide/router#locationstrategy-and-browser-url-styles) for more details on routing strategies. 
+`@bobleujr/msal-angular` supports both the `PathLocationStrategy` and `HashLocationStrategy`, which can be configured in the `app-routing.module.ts` of your app. See our [samples list](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-angular-v2-samples) for the routing strategy demonstrated by each sample. See the [Angular docs](https://angular.io/guide/router#locationstrategy-and-browser-url-styles) for more details on routing strategies. 
 
 See [below](#how-do-i-log-users-in-when-they-hit-the-application) for additional considerations for each strategy if you are wanting to log users in on page load.
 
@@ -129,7 +129,7 @@ Please see our [MsalGuard doc](https://github.com/AzureAD/microsoft-authenticati
 
 ### How do I get accounts?
 
-The `@azure/msal-browser` instance used by `@azure/msal-angular` exposes multiple methods for getting account information. We recommend using `getAllAccounts()` to get all accounts, and `getAccountByHomeId()` and `getAccountByLocalId()` to get specific accounts. Note that while `getAccountByUsername()` is available, it should be a secondary choice, as it may be less reliable and is for convenience only. See the [`@azure/msal-browser` docs](https://azuread.github.io/microsoft-authentication-library-for-js/ref/classes/_azure_msal_browser.publicclientapplication.html) for more details on account methods.
+The `@bobleujr/msal-browser` instance used by `@bobleujr/msal-angular` exposes multiple methods for getting account information. We recommend using `getAllAccounts()` to get all accounts, and `getAccountByHomeId()` and `getAccountByLocalId()` to get specific accounts. Note that while `getAccountByUsername()` is available, it should be a secondary choice, as it may be less reliable and is for convenience only. See the [`@bobleujr/msal-browser` docs](https://azuread.github.io/microsoft-authentication-library-for-js/ref/classes/_azure_msal_browser.publicclientapplication.html) for more details on account methods.
 
 We recommend subscribing to the `inProgress$` observable and filtering for `InteractionStatus.None` before retrieving account information. This ensures that all interactions have completed before getting account information. See [our sample](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/samples/msal-angular-v2-samples/angular10-sample-app/src/app/app.component.ts#L27) for an example of this use.
 
@@ -144,7 +144,7 @@ We recommend setting the active account:
 - After any action that may change the account, especially if your app uses multiple accounts. See [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/samples/msal-angular-v2-samples/angular11-sample-app/src/app/home/home.component.ts#L23) for an example of setting the account after a successful login.
 - On initial page load. Wait until all interactions are complete (by subscribing to the `inProgress$` observable and filtering for `InteractionStatus.None`), check if there is an active account, and if there is none, set the active account. This could be the first account retrieved by `getAllAccounts()`, or other account selection logic required by your app. See [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/samples/msal-angular-v2-samples/angular11-sample-app) for an example of checking and setting the active account on page load.
 
-**Note:** Prior to `@azure/msal-browser@2.16.0` active account did not persist across page loads. If you are using `@azure/msal-browser@2.15.0` or earlier we recommend that you set the active account for each page load. In version 2.16.0 and above the active account will be cached in the cache location specified in your MSAL config and retrieved each time `getActiveAccount` is called.
+**Note:** Prior to `@bobleujr/msal-browser@2.16.0` active account did not persist across page loads. If you are using `@bobleujr/msal-browser@2.15.0` or earlier we recommend that you set the active account for each page load. In version 2.16.0 and above the active account will be cached in the cache location specified in your MSAL config and retrieved each time `getActiveAccount` is called.
 
 Our [Angular 11](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/samples/msal-angular-v2-samples/angular11-sample-app) sample demonstrates basic usage. Your app may require more complicated logic to choose accounts.
 
@@ -152,13 +152,13 @@ Our [Angular 11](https://github.com/AzureAD/microsoft-authentication-library-for
 
 If you have questions about specific errors you are receiving please see the following documents detailing some of the common errors:
 
-- [`@azure/msal-browser` error doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/errors.md)
-- [`@azure/msal-angular` error doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/errors.md)
+- [`@bobleujr/msal-browser` error doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/errors.md)
+- [`@bobleujr/msal-angular` error doc](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/docs/v2-docs/errors.md)
 
 ## What if my question has not been answered?
 
-First check the `@azure/msal-browser` [FAQ](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/FAQ.md) to see if your question is answered there. Since `@azure/msal-angular` is a wrapper around `@azure/msal-browser` many questions you may have are answered there.
+First check the `@bobleujr/msal-browser` [FAQ](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/FAQ.md) to see if your question is answered there. Since `@bobleujr/msal-angular` is a wrapper around `@bobleujr/msal-browser` many questions you may have are answered there.
 
 If you have questions about our roadmap you can find a high level overview of planned features and releases [here](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/roadmap.md).
 
-If your question is not answered in this document or in the `@azure/msal-browser` FAQ you can [open an issue](https://github.com/AzureAD/microsoft-authentication-library-for-js/issues/new/choose) and we will answer it as soon as we can.
+If your question is not answered in this document or in the `@bobleujr/msal-browser` FAQ you can [open an issue](https://github.com/AzureAD/microsoft-authentication-library-for-js/issues/new/choose) and we will answer it as soon as we can.

@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { ICrypto, Logger, AccountEntity, CacheManager } from "@azure/msal-common";
+import { ICrypto, Logger, AccountEntity, CacheManager } from "@bobleujr/msal-common";
 import { InteractionType } from "../utils/BrowserConstants";
 import { EventCallbackFunction, EventError, EventMessage, EventPayload } from "./EventMessage";
 import { EventType } from "./EventType";

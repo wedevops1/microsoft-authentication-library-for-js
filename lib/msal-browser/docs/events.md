@@ -1,6 +1,6 @@
 # Events
 
-Msal-Browser (`@azure/msal-browser`) starting at version 2.4 now provides event APIs that are available to users of our core library and wrapper libraries. These events are related to auth and what MSAL is doing, and can be used in applications to update UI, show error messages, and so on.
+Msal-Browser (`@bobleujr/msal-browser`) starting at version 2.4 now provides event APIs that are available to users of our core library and wrapper libraries. These events are related to auth and what MSAL is doing, and can be used in applications to update UI, show error messages, and so on.
 
 ## What events look like
 ```javascript

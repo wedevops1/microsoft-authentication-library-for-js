@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthenticationResult, ICrypto, Logger, StringUtils, PromptValue, CommonAuthorizationCodeRequest, AuthorizationCodeClient, AuthError, Constants, UrlString, ServerAuthorizationCodeResponse, ProtocolUtils, IPerformanceClient, PerformanceEvents } from "@azure/msal-common";
+import { AuthenticationResult, ICrypto, Logger, StringUtils, PromptValue, CommonAuthorizationCodeRequest, AuthorizationCodeClient, AuthError, Constants, UrlString, ServerAuthorizationCodeResponse, ProtocolUtils, IPerformanceClient, PerformanceEvents } from "@bobleujr/msal-common";
 import { StandardInteractionClient } from "./StandardInteractionClient";
 import { AuthorizationUrlRequest } from "../request/AuthorizationUrlRequest";
 import { BrowserConfiguration } from "../config/Configuration";

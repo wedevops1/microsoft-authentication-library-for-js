@@ -1,4 +1,4 @@
-# Change Log - @azure/msal-browser
+# Change Log - @bobleujr/msal-browser
 
 This log was last generated on Mon, 10 Oct 2022 22:27:02 GMT and should not be manually modified.
 
@@ -12,7 +12,7 @@ Mon, 10 Oct 2022 22:27:02 GMT
 
 - Extend msal-browser TokenCache to load refresh tokens #5233 (louisv@microsoft.com)
 - Make popup poll interval configurable #5276 (hemoral@microsoft.com)
-- Bump @azure/msal-common to v7.6.0
+- Bump @bobleujr/msal-common to v7.6.0
 
 ## 2.29.0
 
@@ -24,7 +24,7 @@ Mon, 03 Oct 2022 22:12:26 GMT
 - Add support for MSR Crypto #3826 (janutter@microsoft.com)
 - Add x-ms-request-id to perf telemetry logging #5244 (joarroyo@microsoft.com)
 - Added 'no_session' to prompt enum #5131 (rginsburg@microsoft.com)
-- Bump @azure/msal-common to v7.5.0
+- Bump @bobleujr/msal-common to v7.5.0
 
 ### Patches
 
@@ -38,7 +38,7 @@ Mon, 12 Sep 2022 18:19:32 GMT
 
 - Fix keystore clearing on Firefox #5112 (hemoral@microsoft.com)
 - Restore error codes for acquireTokenSilent telemetry #5190 (janutter@microsoft.com)
-- Bump @azure/msal-common to v7.4.1
+- Bump @bobleujr/msal-common to v7.4.1
 
 ## 2.28.2
 
@@ -46,7 +46,7 @@ Fri, 02 Sep 2022 18:06:53 GMT
 
 ### Patches
 
-- Bump @azure/msal-common to v7.4.0
+- Bump @bobleujr/msal-common to v7.4.0
 
 ## 2.28.1
 
@@ -57,7 +57,7 @@ Mon, 01 Aug 2022 22:22:35 GMT
 - Rename native request property scopes to scope #5043 (thomas.norling@microsoft.com)
 - adding network performance measurement #4834 (ellymakuba@microsoft.com)
 - Send login_hint claim instead of sid if available #4990 (janutter@microsoft.com)
-- Bump @azure/msal-common to v7.3.0
+- Bump @bobleujr/msal-common to v7.3.0
 
 ## 2.28.0
 
@@ -67,7 +67,7 @@ Mon, 18 Jul 2022 23:26:21 GMT
 
 - Added new token size field in the perf telemetry data #4973 (bmahal@microsoft.com)
 - Add local cache support for JS-WAM bridge #4971 (sameera.gajjarapu@microsoft.com)
-- Bump @azure/msal-common to v7.2.0
+- Bump @bobleujr/msal-common to v7.2.0
 
 ### Patches
 
@@ -80,7 +80,7 @@ Tue, 05 Jul 2022 22:37:04 GMT
 ### Minor changes
 
 - feat: adding authority metadata resiliency #4536 (samuelkamau@microsoft.com)
-- Bump @azure/msal-common to v7.1.0
+- Bump @bobleujr/msal-common to v7.1.0
 
 ### Patches
 
@@ -96,7 +96,7 @@ Mon, 13 Jun 2022 22:28:09 GMT
 ### Minor changes
 
 - Add errorCode and subErrorCode to client telemetry events (#4863) (sameera.gajjarapu@microsoft.com)
-- Bump @azure/msal-common to v7.0.0
+- Bump @bobleujr/msal-common to v7.0.0
 
 ### Patches
 
@@ -113,7 +113,7 @@ Mon, 06 Jun 2022 22:13:00 GMT
 
 - Fix empty hash errors in popups #4793 (thomas.norling@microsoft.com)
 - Add PoP support for Encrypted Access Tokens #4730 (hemoral@microsoft.com)
-- Bump @azure/msal-common to v6.4.0
+- Bump @bobleujr/msal-common to v6.4.0
 
 ### Patches
 
@@ -131,7 +131,7 @@ Mon, 02 May 2022 22:23:33 GMT
 
 - Move internals needed for msal-browser-1p to separate export #4742 (janutter@microsoft.com)
 - Add support for acquiring tokens from the native broker #4531 (thomas.norling@microsoft.com)
-- Bump @azure/msal-common to v6.3.0
+- Bump @bobleujr/msal-common to v6.3.0
 
 ### Patches
 
@@ -146,7 +146,7 @@ Mon, 04 Apr 2022 21:12:42 GMT
 
 - Add performance telemetry API #4570 (janutter@microsoft.com)
 - Add Client Application telemetry parameters to MSAL #4616 (prithviraj.kanherkar@microsoft.com)
-- Bump @azure/msal-common to v6.2.0
+- Bump @bobleujr/msal-common to v6.2.0
 
 ### Patches
 
@@ -169,7 +169,7 @@ Tue, 08 Feb 2022 00:41:06 GMT
 
 - Add support for logout_hint #4450 (hemoral@microsoft.com)
 - Add AzureCloudInstance to JS libraries (sameera.gajjarapu@microsoft.com)
-- Bump @azure/msal-common to v6.1.0
+- Bump @bobleujr/msal-common to v6.1.0
 
 ### Patches
 
@@ -185,7 +185,7 @@ Tue, 04 Jan 2022 00:20:29 GMT
 ### Minor changes
 
 - Add support for requested claims in silent token acquisition #4296 (hemoral@microsoft.com)
-- Bump @azure/msal-common to v6.0.0
+- Bump @bobleujr/msal-common to v6.0.0
 
 ### Patches
 
@@ -198,7 +198,7 @@ Tue, 07 Dec 2021 00:17:01 GMT
 ### Minor changes
 
 - Add acquireTokenByCode API for hybrid spa flow #3978 (janutter@microsoft.com)
-- Bump @azure/msal-common to v5.2.0
+- Bump @bobleujr/msal-common to v5.2.0
 
 ### Patches
 
@@ -214,7 +214,7 @@ Mon, 01 Nov 2021 23:53:21 GMT
 - Add support for ephemeral SSH certificate acquisition #4178 (hemoral@microsoft.com)
 - Add support for in-memory storage of token binding keys #4183 (hemoral@microsoft.com)
 - Add support for SHR nonce #3999 (hemoral@microsoft.com)
-- Bump @azure/msal-common to v5.1.0
+- Bump @bobleujr/msal-common to v5.1.0
 
 ### Patches
 
@@ -231,7 +231,7 @@ Mon, 04 Oct 2021 23:12:35 GMT
 
 - Emit event when user logs in or out from a different tab or window #3981 (thomas.norling@microsoft.com)
 - Remove requirement of user hint on ssoSilent API #4123 (prkanher@microsoft.com)
-- Bump @azure/msal-common to v5.0.1
+- Bump @bobleujr/msal-common to v5.0.1
 
 ### Patches
 
@@ -652,7 +652,7 @@ Thu, 13 Aug 2020 02:20:48 GMT
 
 # 2.0.0-beta.3
 ## Breaking Changes
-* `@azure/msal-browser` now follows a unified cache schema similar to other MSAL libraries (#1624, #1655, #1680, #1711, #1762, #1771)
+* `@bobleujr/msal-browser` now follows a unified cache schema similar to other MSAL libraries (#1624, #1655, #1680, #1711, #1762, #1771)
 * Updated browser library to follow common format for request, response, and client configurations (#1682, #1711, #1762, #1770, #1771, #1793)
 * Account interface updated to AccountInfo.ts (#1789)
 
@@ -666,7 +666,7 @@ Thu, 13 Aug 2020 02:20:48 GMT
 
 # 2.0.0-beta.1
 ## Features
-* Added a silent iframe flow in the @azure/msal-browser package (#1451)
+* Added a silent iframe flow in the @bobleujr/msal-browser package (#1451)
     * Includes an ssoSilent() API to acquire tokens silently with a user context (loginHint)
 
 ## Bugs

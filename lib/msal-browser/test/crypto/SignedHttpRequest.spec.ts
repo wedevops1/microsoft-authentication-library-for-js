@@ -2,7 +2,7 @@ import { SignedHttpRequest, StringUtils } from "../../src";
 import { BrowserCrypto } from "../../src/crypto/BrowserCrypto";
 import { CryptoOps } from "../../src/crypto/CryptoOps";
 import { createHash } from "crypto";
-import { AuthToken, Logger } from "@azure/msal-common";
+import { AuthToken, Logger } from "@bobleujr/msal-common";
 
 const msrCrypto = require("../polyfills/msrcrypto.min");
 

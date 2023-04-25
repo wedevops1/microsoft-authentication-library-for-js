@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthError, InteractionRequiredAuthError } from "@azure/msal-common";
+import { AuthError, InteractionRequiredAuthError } from "@bobleujr/msal-common";
 import { BrowserAuthError } from "./BrowserAuthError";
 
 export type OSError = {

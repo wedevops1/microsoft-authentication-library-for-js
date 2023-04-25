@@ -4,7 +4,7 @@
  */
 
 import sinon from "sinon";
-import { AccountInfo, AccountEntity, TokenClaims } from "@azure/msal-common";
+import { AccountInfo, AccountEntity, TokenClaims } from "@bobleujr/msal-common";
 import { TEST_DATA_CLIENT_INFO, TEST_CONFIG } from "../utils/StringConstants";
 import { BaseInteractionClient } from "../../src/interaction_client/BaseInteractionClient";
 import { EndSessionRequest, PublicClientApplication } from "../../src";

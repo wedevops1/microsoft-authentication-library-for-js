@@ -4,7 +4,7 @@
  */
 
 import { HttpRequest } from "@angular/common/http";
-import { PopupRequest, RedirectRequest, InteractionType, SilentRequest } from "@azure/msal-browser";
+import { PopupRequest, RedirectRequest, InteractionType, SilentRequest } from "@bobleujr/msal-browser";
 import { MsalService } from "./msal.service";
 
 export declare type MsalInterceptorAuthRequest = Omit<PopupRequest, "scopes"> | Omit<RedirectRequest, "scopes"> | Omit<SilentRequest, "scopes"> ;

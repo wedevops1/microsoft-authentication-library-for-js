@@ -22,7 +22,7 @@ import {
     AuthorityOptions,
     CcsCredential,
     CcsCredentialType,
-} from "@azure/msal-common";
+} from "@bobleujr/msal-common";
 import { Configuration, buildConfiguration } from "../../src/config/Configuration";
 import { TEST_CONFIG, TEST_URIS, TEST_DATA_CLIENT_INFO, TEST_TOKENS, TEST_TOKEN_LIFETIMES, TEST_HASHES, TEST_POP_VALUES, TEST_STATE_VALUES, RANDOM_TEST_GUID, TEST_CRYPTO_VALUES } from "../utils/StringConstants";
 import { BrowserAuthError } from "../../src/error/BrowserAuthError";
@@ -61,7 +61,7 @@ const testAuthCodeRequest: CommonAuthorizationCodeRequest = {
 const testBrowserRequestLogger: Logger = new Logger({
     loggerCallback: (level: LogLevel, message: string, containsPii: boolean): void => {},
     piiLoggingEnabled: true
-}, "@azure/msal-browser", "test");
+}, "@bobleujr/msal-browser", "test");
 
 const testPkceCodes = {
     challenge: "TestChallenge",

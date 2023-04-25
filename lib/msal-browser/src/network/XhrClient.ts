@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { INetworkModule, NetworkRequestOptions, NetworkResponse } from "@azure/msal-common";
+import { INetworkModule, NetworkRequestOptions, NetworkResponse } from "@bobleujr/msal-common";
 import { BrowserAuthError } from "../error/BrowserAuthError";
 import { HTTP_REQUEST_TYPE } from "../utils/BrowserConstants";
 

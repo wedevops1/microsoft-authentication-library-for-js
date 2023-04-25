@@ -2,7 +2,7 @@ import { CryptoOps } from "../../src/crypto/CryptoOps";
 import { GuidGenerator } from "../../src/crypto/GuidGenerator";
 import { BrowserCrypto } from "../../src/crypto/BrowserCrypto";
 import { createHash } from "crypto";
-import { PkceCodes, BaseAuthRequest, Logger } from "@azure/msal-common";
+import { PkceCodes, BaseAuthRequest, Logger } from "@bobleujr/msal-common";
 import { TEST_URIS } from "../utils/StringConstants";
 import { BrowserAuthError } from "../../src";
 import { ModernBrowserCrypto } from "../../src/crypto/ModernBrowserCrypto";

@@ -121,7 +121,6 @@ jobs:
     with:
       path: 'lib'
       lib-name: 'msal-browser'
-      cdn: true
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       CDN_EUNO_SAS: ${{ secrets.CDN_EUNO_SAS }}

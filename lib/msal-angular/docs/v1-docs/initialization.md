@@ -77,7 +77,7 @@ export class AppModule {}
 
 Using MsalInterceptor is optional and you can write your own interceptor if you choose to. Alternatively, you can also explicitly acquire tokens using the acquireToken APIs.
 
-As of `@azure/msal-angular@1.1.0`, `protectedResourceMap` supports wildcard patterns that are supported by [minimatch](https://github.com/isaacs/minimatch), and `unprotectedResources` is deprecated and ignored. 
+As of `@bobleujr/msal-angular@1.1.0`, `protectedResourceMap` supports wildcard patterns that are supported by [minimatch](https://github.com/isaacs/minimatch), and `unprotectedResources` is deprecated and ignored. 
 
 **Note:** When using wildcards, if multiple matching entries are found in the `protectedResourceMap`, the first match found will be used (based on the order of the `protectedResourceMap`).
 

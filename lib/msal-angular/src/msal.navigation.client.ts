@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { NavigationClient, NavigationOptions, UrlString } from "@azure/msal-browser";
+import { NavigationClient, NavigationOptions, UrlString } from "@bobleujr/msal-browser";
 import { Router } from "@angular/router";
 import { Location } from "@angular/common";
 import { MsalService } from "./msal.service";

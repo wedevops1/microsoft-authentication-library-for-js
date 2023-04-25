@@ -13,7 +13,7 @@ import { Location, DOCUMENT } from "@angular/common";
 import { Observable, EMPTY, of } from "rxjs";
 import { switchMap, catchError } from "rxjs/operators";
 import { MsalService } from "./msal.service";
-import { AccountInfo, AuthenticationResult, BrowserConfigurationAuthError, InteractionType, StringUtils, UrlString } from "@azure/msal-browser";
+import { AccountInfo, AuthenticationResult, BrowserConfigurationAuthError, InteractionType, StringUtils, UrlString } from "@bobleujr/msal-browser";
 import { Injectable, Inject } from "@angular/core";
 import { MSAL_INTERCEPTOR_CONFIG } from "./constants";
 import { MsalInterceptorAuthRequest, MsalInterceptorConfiguration, ProtectedResourceScopes, MatchingResources } from "./msal.interceptor.config";

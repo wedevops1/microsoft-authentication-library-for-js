@@ -10,9 +10,9 @@ This guide will detail how to leverage each method for your application.
 
 ## Configuration Options
 
-`@azure/msal-angular` accepts three configuration objects:
+`@bobleujr/msal-angular` accepts three configuration objects:
 
-1. [Configuration](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_browser.html#configuration): This is the same configuration object that is used for the core `@azure/msal-browser` library. All configuration options can be found [here](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_browser.html#configuration).
+1. [Configuration](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_browser.html#configuration): This is the same configuration object that is used for the core `@bobleujr/msal-browser` library. All configuration options can be found [here](https://azuread.github.io/microsoft-authentication-library-for-js/ref/modules/_azure_msal_browser.html#configuration).
 2. [`MsalGuardConfiguration`](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/src/msal.guard.config.ts): A set of options specifically for the Angular guard.
 3. [`MsalInterceptorConfiguration`](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/src/msal.interceptor.config.ts): A set of options specifically for the Angular interceptor.
 
@@ -37,8 +37,8 @@ The `MsalModule` class contains a static method that can be called in your `app.
 import { NgModule } from '@angular/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { MsalModule, MsalService, MsalGuard, MsalInterceptor, MsalBroadcastService, MsalRedirectComponent } from "@azure/msal-angular";
-import { PublicClientApplication, InteractionType, BrowserCacheLocation } from "@azure/msal-browser";
+import { MsalModule, MsalService, MsalGuard, MsalInterceptor, MsalBroadcastService, MsalRedirectComponent } from "@bobleujr/msal-angular";
+import { PublicClientApplication, InteractionType, BrowserCacheLocation } from "@bobleujr/msal-browser";
 
 @NgModule({
     imports: [
@@ -98,8 +98,8 @@ import {
   MsalGuardConfiguration,
   MsalBroadcastService, 
   MsalRedirectComponent
-} from "@azure/msal-angular";
-import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation } from "@azure/msal-browser";
+} from "@bobleujr/msal-angular";
+import { IPublicClientApplication, PublicClientApplication, InteractionType, BrowserCacheLocation } from "@bobleujr/msal-browser";
 
 export function MSALInstanceFactory(): IPublicClientApplication {
   return new PublicClientApplication({
@@ -170,7 +170,7 @@ export class AppModule { }
 
 If you need to dynamically configure MSAL Angular (e.g. based on values returned from an API), you can use `platformBrowserDynamic`. `platformBrowserDyamic` is a platform factory, used to bootstrap the application, and is able to take in configuration options. `platformBrowserDynamic` should already be present when the Angular application is set up.
 
-The following is an example of how to dynamically configure `@azure/msal-angular` with `platformBrowserDynamic` and a json file:
+The following is an example of how to dynamically configure `@bobleujr/msal-angular` with `platformBrowserDynamic` and a json file:
 
 `app.module.ts`
 ```typescript
@@ -178,7 +178,7 @@ import {
   MsalModule,
   MsalInterceptor,
   MsalService,
-} from '@azure/msal-angular';
+} from '@bobleujr/msal-angular';
 
 @NgModule({
   imports: [
@@ -204,8 +204,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import { MSAL_INSTANCE, MSAL_GUARD_CONFIG, MSAL_INTERCEPTOR_CONFIG } from '@azure/msal-angular';
-import { PublicClientApplication, Configuration } from '@azure/msal-browser';
+import { MSAL_INSTANCE, MSAL_GUARD_CONFIG, MSAL_INTERCEPTOR_CONFIG } from '@bobleujr/msal-angular';
+import { PublicClientApplication, Configuration } from '@bobleujr/msal-browser';
 
 if (environment.production) {
   enableProdMode();
@@ -331,11 +331,11 @@ export class ConfigService {
 ```typescript
 import { InjectionToken, NgModule, APP_INITIALIZER } from '@angular/core';
 import { IPublicClientApplication, PublicClientApplication, 
-    LogLevel } from '@azure/msal-browser';
+    LogLevel } from '@bobleujr/msal-browser';
 import { MsalGuard, MsalInterceptor, MsalBroadcastService,
      MsalInterceptorConfiguration, MsalModule, MsalService,
       MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG, 
-      MsalGuardConfiguration } from '@azure/msal-angular';
+      MsalGuardConfiguration } from '@bobleujr/msal-angular';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ConfigService } from './config.service';
 
@@ -443,7 +443,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { MsalRedirectComponent } from '@azure/msal-angular';
+import { MsalRedirectComponent } from '@bobleujr/msal-angular';
 import { DetailComponent } from './detail/detail.component';
 import { MsalConfigDynamicModule } from './msal-config-dynamic.module';
 

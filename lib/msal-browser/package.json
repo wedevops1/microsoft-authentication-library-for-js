@@ -1,9 +1,14 @@
 {
-  "name": "@azure/msal-browser",
+  "name": "@bobleujr/msal-browser",
   "author": {
     "name": "Microsoft",
     "email": "nugetaad@microsoft.com",
     "url": "https://www.microsoft.com"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "license": "MIT",
   "repository": {
@@ -58,7 +63,7 @@
     "build:modules": "rollup -c",
     "build:modules:watch": "rollup -cw",
     "build": "npm run clean && npm run build:modules",
-    "link:localDeps": "npx lerna bootstrap --scope @azure/msal-common --scope @azure/msal-browser",
+    "link:localDeps": "npx lerna bootstrap --scope @bobleujr/msal-common --scope @bobleujr/msal-browser",
     "prepack": "npm run build:all"
   },
   "devDependencies": {
@@ -90,6 +95,6 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@azure/msal-common": "^7.6.0"
+    "@bobleujr/msal-common": "^7.6.0"
   }
 }

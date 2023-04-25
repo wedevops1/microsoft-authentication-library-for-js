@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AccountInfo, CommonSilentFlowRequest, StringDict } from "@azure/msal-common";
+import { AccountInfo, CommonSilentFlowRequest, StringDict } from "@bobleujr/msal-common";
 import { CacheLookupPolicy } from "../utils/BrowserConstants";
 
 /**

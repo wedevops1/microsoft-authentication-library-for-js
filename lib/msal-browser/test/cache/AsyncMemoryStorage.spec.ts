@@ -1,4 +1,4 @@
-import { Logger, LogLevel } from "@azure/msal-common";
+import { Logger, LogLevel } from "@bobleujr/msal-common";
 import { BrowserAuthError } from "../../src";
 import { AsyncMemoryStorage } from "../../src/cache/AsyncMemoryStorage";
 

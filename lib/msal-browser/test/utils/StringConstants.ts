@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AuthenticationScheme, Constants, NetworkResponse } from "@azure/msal-common";
+import { AuthenticationScheme, Constants, NetworkResponse } from "@bobleujr/msal-common";
 import { version } from "../../src/packageMetadata";
 
 /**

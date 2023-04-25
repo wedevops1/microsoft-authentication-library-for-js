@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { AccountInfo, AuthenticationResult, Constants, RequestThumbprint, AuthError, PerformanceEvents, ServerError, InteractionRequiredAuthError } from "@azure/msal-common";
+import { AccountInfo, AuthenticationResult, Constants, RequestThumbprint, AuthError, PerformanceEvents, ServerError, InteractionRequiredAuthError } from "@bobleujr/msal-common";
 import { Configuration } from "../config/Configuration";
 import { DEFAULT_REQUEST, InteractionType, ApiId, CacheLookupPolicy, BrowserConstants } from "../utils/BrowserConstants";
 import { IPublicClientApplication } from "./IPublicClientApplication";

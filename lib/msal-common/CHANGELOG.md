@@ -1,4 +1,4 @@
-# Change Log - @azure/msal-common
+# Change Log - @bobleujr/msal-common
 
 This log was last generated on Mon, 10 Oct 2022 22:27:03 GMT and should not be manually modified.
 
@@ -486,7 +486,7 @@ Thu, 15 Oct 2020 00:49:18 GMT
 
 ### Patches
 
-- Removing unused errors in msal-common and fixing possible build errors in @azure/msal-common@1.6.0 (#2432) (sameera.gajjarapu@microsoft.com)
+- Removing unused errors in msal-common and fixing possible build errors in @bobleujr/msal-common@1.6.0 (#2432) (sameera.gajjarapu@microsoft.com)
 
 ## 1.6.0
 

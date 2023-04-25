@@ -27,7 +27,7 @@ For tokens issued by AAD/MSA, applications will need to include additional query
 #### api.ts
 
 ```typescript
-import { SignedHttpRequest } from "@azure/msal-browser";
+import { SignedHttpRequest } from "@bobleujr/msal-browser";
 
 const resourceRequestUri = "https://api.contoso.com/my-api";
 const resourceRequestMethod = "GET";

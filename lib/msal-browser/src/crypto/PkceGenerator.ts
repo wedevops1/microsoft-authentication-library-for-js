@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { PkceCodes } from "@azure/msal-common";
+import { PkceCodes } from "@bobleujr/msal-common";
 import { BrowserAuthError } from "../error/BrowserAuthError";
 import { Base64Encode } from "../encode/Base64Encode";
 import { BrowserCrypto } from "./BrowserCrypto";

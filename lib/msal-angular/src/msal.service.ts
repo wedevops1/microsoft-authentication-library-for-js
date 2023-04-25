@@ -16,7 +16,7 @@ import {
     SsoSilentRequest,
     Logger,
     WrapperSKU
-} from "@azure/msal-browser";
+} from "@bobleujr/msal-browser";
 import { MSAL_INSTANCE } from "./constants";
 import { Observable, from } from "rxjs";
 import { IMsalService } from "./IMsalService";

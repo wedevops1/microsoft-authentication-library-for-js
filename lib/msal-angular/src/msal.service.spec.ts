@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { AuthenticationResult, AuthError, InteractionType, Logger, PublicClientApplication, SilentRequest } from '@azure/msal-browser';
+import { AuthenticationResult, AuthError, InteractionType, Logger, PublicClientApplication, SilentRequest } from '@bobleujr/msal-browser';
 import { MsalModule, MsalBroadcastService, MsalService } from './public-api';
 
 let authService: MsalService;

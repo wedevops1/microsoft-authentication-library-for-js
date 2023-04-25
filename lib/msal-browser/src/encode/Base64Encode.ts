@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { Constants } from "@azure/msal-common";
+import { Constants } from "@bobleujr/msal-common";
 import { BrowserStringUtils } from "../utils/BrowserStringUtils";
 
 /**

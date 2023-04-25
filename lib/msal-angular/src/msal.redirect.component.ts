@@ -5,7 +5,7 @@
 
 /**
  * This is a dedicated redirect component to be added to Angular apps to 
- * handle redirects when using @azure/msal-angular.
+ * handle redirects when using @bobleujr/msal-angular.
  * Import this component to use redirects in your app.
  */
 

@@ -1,5 +1,10 @@
 {
-  "name": "@azure/msal-common",
+  "name": "@bobleujr/msal-common",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": {
     "name": "Microsoft",
     "email": "nugetaad@microsoft.com",
